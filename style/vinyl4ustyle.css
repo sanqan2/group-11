@@ -1,3 +1,7 @@
+@font-face{
+    font-family: jockey;
+    src:url(jockeyone.ttf);
+}
 body{
     background-color: rgb(33, 2, 5);
     margin: 0;
@@ -8,12 +12,25 @@ body{
     height: 80px;
     background-color: red;
     top: 0;
-    font-family: jockey one;
+    display: flex;
+    flex-direction: row;
+    
 }
+.sitename
+{
+    border-right: solid 1px black;
+    width: 10%;
+    color: white;
+    padding-top: 30px;
+    margin-left: 40px;
+    font-family: jockey;
+   font-size: 1.4rem;
+}
+
 .logo{
-    width: 120px;
-    height: 120px;
-    padding-bottom: 100px;
+    width: 90px;
+    height: 90px;
+    top: 0px;
 }
 /*Index page*/
 .heroelement
@@ -33,19 +50,20 @@ body{
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
 }
 
 .recomendedcat{
     width: 100%;
-    height: 100%;
-    background-color: rgb(82, 68, 68);
+    height: 80%;
+    background-color: rgb(167, 13, 13);
     text-align: center;
     font-size: 1rem;
     color: white;
     box-shadow: #0f191d 2px 2px;
     cursor: pointer;
+    border: solid white 1px;
 }
 p{
     margin-top: 50px;
