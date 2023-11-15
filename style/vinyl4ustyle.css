@@ -32,6 +32,16 @@ body{
     height: 90px;
     top: 0px;
 }
+.space{
+    width: 56%;
+    height: 100%;
+    border-right: solid 1px black;
+}
+.twoicons{
+    width: 12%;
+    height: 100%;
+    border-right: solid 1px black;
+}
 /*Index page*/
 .heroelement
 {
