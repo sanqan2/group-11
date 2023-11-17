@@ -1,97 +1,174 @@
-@font-face{
-    font-family: jockey;
-    src:url(jockeyone.ttf);
+@font-face {
+  font-family: jockey;
+  src: url(jockeyone.ttf);
 }
-body{
-    background-color: rgb(33, 2, 5);
-    margin: 0;
+body {
+  background-color: rgb(33, 2, 5);
+  margin: 0;
 }
-.header
-{
-    width: 100%;
-    height: 80px;
-    background-color: red;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    
+.sitename {
+  border-right: solid 1px black;
+  width: 10%;
+  color: white;
+  padding-top: 1px;
+  margin-left: 100px;
+  font-family: jockey;
+  font-size: 1.4rem;
 }
-.sitename
-{
-    border-right: solid 1px black;
-    width: 10%;
-    color: white;
-    padding-top: 25px;
-    margin-left: 40px;
-    font-family: jockey;
-   font-size: 1.6rem;
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
-.logo{
-    width: 90px;
-    height: 90px;
-    top: 0px;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 50%;
+  float: right;
 }
-.space{
-    width: 56%;
-    height: 100%;
-    border-right: solid 1px black;
+
+.topnav #myLinks {
+  display: none;
 }
-.twoicons{
-    width: 12%;
-    height: 100%;
-    border-right: solid 1px black;
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  display: block;
+}
+.topnav a.icon {
+  background: red;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active {
+  background-color: red;
+  color: white;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 74px;
+  position: fixed;
+}
+.headcontetnt {
+  display: flex;
+  flex-direction: row;
+}
+header {
+  height: 74px;
+  width: 100%;
+}
+.fem {
+  width: 50%;
+  height: 74px;
+}
+
+.sitename {
+  border-right: solid 1px black;
+  width: 10%;
+  color: white;
+  padding-top: 5px;
+  margin-left: 100px;
+  font-family: jockey;
+  font-size: 1.6rem;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.space {
+  width: 56%;
+  height: 100%;
+  border-right: solid 1px black;
+}
+.twoicons {
+  width: 12%;
+  height: 100%;
+  border-right: solid 1px black;
 }
 /*Index page*/
-.heroelement
-{
-    width: 100%;
-    height: 240px;
+.heroelement {
+  width: 100%;
+  height: 240px;
 }
-.heropic{
-    width: 100%;
-    height: 100%;
+.heropic {
+  width: 100%;
+  height: 110%;
+  top: 0;
 }
-.recomended{
-    width: 82%;
-    height: 500px;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 16px;
+.recomended {
+  width: 82%;
+  height: 500px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
 }
 
-.recomendedcat{
-    width: 100%;
-    height: 80%;
-    background-color: rgb(167, 13, 13);
-    text-align: center;
-    font-size: 1rem;
-    color: white;
-    box-shadow: #0f191d 2px 2px;
-    cursor: pointer;
-    border: solid white 1px;
+.recomendedcat {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(167, 13, 13);
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  box-shadow: #0f191d 2px 2px;
+  cursor: pointer;
+  border: solid white 1px;
+  box-shadow: #040101 0px 2px;
 }
-p{
-    margin-top: 50px;
+.recomendedvinyl {
+  width: 40px;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  box-shadow: #0f191d 2px 2px;
+  cursor: pointer;
+  border: solid white 1px;
+  box-shadow: #040101 0px 2px;
 }
-.footer
-{
-    width: 100%;
-    height: 120px;
-    background-color: rgb(111, 89, 89);
+.lilpic {
+  width: 30px;
+  height: 40px;
+  background-color: rgb(61, 143, 143);
+}
+.lilinfo {
+  width: 30px;
+  height: 20px;
+  background-color: rgb(5, 28, 25);
+}
+p {
+  margin-top: 50px;
+}
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(111, 89, 89);
 }
 @media screen and (max-width: 800px) {
-    .recomended{
-        margin: 0 auto;
-        width: 90%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        margin-top: 40px;
-    }
+  .recomended {
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+  }
 }
 /*Product page*/
