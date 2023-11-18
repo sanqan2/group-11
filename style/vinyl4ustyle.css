@@ -6,11 +6,16 @@ body {
   background-color: rgb(33, 2, 5);
   margin: 0;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .sitename {
   border-right: solid 1px black;
   width: 10%;
   color: white;
-  margin-top: 8px;
+  margin-top: 4px;
   margin-left: 8px;
   font-family: jockey;
   font-size: 1.4rem;
@@ -19,75 +24,101 @@ body {
 .logo {
   width: 70px;
   height: 70px;
-  margin-top: 8px;
+  margin-top: 20px;
   margin-left: 8px;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  top: 0;
-  width: 50%;
-  float: right;
+header {
+  background-color: red;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.name {
+  font-size: 2rem;
+}
+.name2 {
+  transition: 0, 7s ease;
+}
+.name2 :hover {
+  color: blue;
+}
+.menu {
+  cursor: pointer;
+  display: block;
+}
+.menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: brown;
+  width: 40%;
+  text-align: center;
+  transition: 0.3s;
 }
 
-.topnav #myLinks {
-  display: none;
+.name2 {
+  margin: 16px 0;
 }
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 27px;
-  display: block;
-}
-.topnav a.icon {
-  background: red;
-  display: block;
-  position: absolute;
+.nav-menu.active {
   right: 0;
-  top: 0;
 }
-.active {
-  background-color: red;
-  color: white;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 74px;
-  position: fixed;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
-.headcontetnt {
-  display: flex;
-  flex-direction: row;
-}
-header {
-  height: 74px;
-  width: 100%;
-}
-.fem {
-  width: 50%;
-  height: 74px;
+.logobox {
+  width: 20%;
+  height: 60px;
+  background-color: blanchedalmond;
 }
 
 .sitename {
   border-right: solid 1px black;
-  width: 10%;
   color: white;
   padding-top: 5px;
-  margin-left: 100px;
   font-family: jockey;
   font-size: 1.6rem;
 }
 .logo {
   width: 70px;
   height: 70px;
-  margin-top: 8px;
+  margin-top: 1px;
   margin-left: 8px;
 }
 .space {
   width: 56%;
   height: 100%;
+  background-color: #333;
   border-right: solid 1px black;
 }
 .twoicons {
