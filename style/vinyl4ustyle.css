@@ -10,10 +10,11 @@ body {
   border-right: solid 1px black;
   width: 10%;
   color: white;
-  padding-top: 1px;
-  margin-left: 100px;
+  margin-top: 8px;
+  margin-left: 8px;
   font-family: jockey;
   font-size: 1.4rem;
+  float: right;
 }
 .logo {
   width: 70px;
@@ -96,8 +97,9 @@ header {
 }
 /*Index page*/
 .heroelement {
-  width: 100%;
+  width: 50%;
   height: 240px;
+  margin: 0 auto;
 }
 .heropic {
   width: 100%;
