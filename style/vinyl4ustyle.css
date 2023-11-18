@@ -11,23 +11,30 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-.sitename {
-  border-right: solid 1px black;
-  width: 10%;
-  color: white;
-  margin-top: 4px;
-  margin-left: 8px;
-  font-family: jockey;
-  font-size: 1.4rem;
-  float: right;
-}
 .logo {
   width: 70px;
   height: 70px;
   margin-top: 20px;
   margin-left: 8px;
 }
-
+a {
+  font-family: jockey;
+}
+.sitename {
+  color: white;
+  padding-top: 5px;
+  font-family: jockey;
+  font-size: 1.6rem;
+  margin-left: 8%;
+}
+.siteplace {
+  font-family: jockey;
+  height: 100%;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-left: 26%;
+}
 header {
   background-color: red;
 }
@@ -37,7 +44,7 @@ li {
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   padding: 0 24px;
 }
@@ -45,7 +52,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 90px;
 }
 .name {
   font-size: 2rem;
@@ -59,6 +66,7 @@ li {
 .menu {
   cursor: pointer;
   display: block;
+  margin-left: 42%;
 }
 .menu.active .bar:nth-child(2) {
   opacity: 0;
@@ -75,7 +83,7 @@ li {
   top: 70px;
   gap: 0;
   flex-direction: column;
-  background-color: brown;
+  background-color: rgb(116, 91, 91);
   width: 40%;
   text-align: center;
   transition: 0.3s;
@@ -96,35 +104,15 @@ li {
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
-.logobox {
-  width: 20%;
-  height: 60px;
-  background-color: blanchedalmond;
-}
-
-.sitename {
-  border-right: solid 1px black;
-  color: white;
-  padding-top: 5px;
-  font-family: jockey;
-  font-size: 1.6rem;
-}
 .logo {
   width: 70px;
   height: 70px;
   margin-top: 1px;
   margin-left: 8px;
 }
-.space {
-  width: 56%;
-  height: 100%;
-  background-color: #333;
-  border-right: solid 1px black;
-}
 .twoicons {
-  width: 12%;
   height: 100%;
-  border-right: solid 1px black;
+  border-right: solid 2px black;
 }
 /*Index page*/
 .heroelement {
@@ -164,12 +152,11 @@ li {
 .recomendedvinyl {
   width: 40px;
   height: 50px;
-  background-color: aqua;
+  background-color: rgb(83, 182, 182);
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-
   text-align: center;
   box-shadow: #0f191d 2px 2px;
   cursor: pointer;
@@ -177,13 +164,13 @@ li {
   box-shadow: #040101 0px 2px;
 }
 .lilpic {
-  width: 30px;
-  height: 40px;
+  width: 100%;
+  height: 60%;
   background-color: rgb(61, 143, 143);
 }
 .lilinfo {
-  width: 30px;
-  height: 20px;
+  width: 100%;
+  height: 40%;
   background-color: rgb(5, 28, 25);
 }
 p {
