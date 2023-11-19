@@ -11,12 +11,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-.logo {
-  width: 70px;
-  height: 70px;
-  margin-top: 20px;
-  margin-left: 8px;
-}
+
 a {
   font-family: jockey;
 }
@@ -25,7 +20,8 @@ a {
   padding-top: 5px;
   font-family: jockey;
   font-size: 1.6rem;
-  margin-left: 8%;
+  margin-left: 4%;
+  width: 10px;
 }
 .siteplace {
   font-family: jockey;
@@ -33,7 +29,7 @@ a {
   padding-top: 5px;
   text-align: center;
   font-size: 1.6rem;
-  margin-left: 26%;
+  margin-left: 32%;
 }
 header {
   background-color: red;
@@ -52,7 +48,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 90px;
 }
 .name {
   font-size: 2rem;
@@ -105,25 +100,42 @@ li {
   background-color: black;
 }
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 68px;
+  height: 68px;
   margin-top: 1px;
   margin-left: 8px;
+  background-image: url("../pics/logo\ with\ text\ kopia.svg");
+  background-size: cover;
 }
 .twoicons {
   height: 100%;
   border-right: solid 2px black;
+}
+p {
+  margin-top: 50px;
+}
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(111, 89, 89);
 }
 /*Index page*/
 .heroelement {
   width: 50%;
   height: 240px;
   margin: 0 auto;
+  font-size: 2rem;
+  font-family: jockey;
+  color: white;
+  background-image: url("../pics/heropic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .heropic {
   width: 100%;
   height: 110%;
   top: 0;
+  position: relative;
 }
 .recomended {
   width: 82%;
@@ -173,14 +185,18 @@ li {
   height: 40%;
   background-color: rgb(5, 28, 25);
 }
-p {
-  margin-top: 50px;
+
+/*rock page*/
+.biggrid {
+  width: 88%;
+  height: 90%;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-.footer {
-  width: 100%;
-  height: 120px;
-  background-color: rgb(111, 89, 89);
-}
+/*search page*/
+
 @media screen and (max-width: 800px) {
   .recomended {
     margin: 0 auto;
