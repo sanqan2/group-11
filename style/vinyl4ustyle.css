@@ -428,3 +428,8 @@ span.price {
     margin-bottom: 20px;
   }
 }
+
+/* about*/
+.about {
+  background-color: rgb(65, 63, 63);
+}
