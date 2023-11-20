@@ -13,3 +13,4 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("active");
   navmenu.classList.toggle("active");
 });
+

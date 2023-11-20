@@ -8,6 +8,29 @@
     <title>payment</title>
   </head>
   <body class="Payment">
+    <header>
+      <nav class="navbar">
+        <div class="logo" onclick="window.location.href"="index.html">
+          <img src="./pics/logo with text kopia.svg" />
+        </div>
+        <div class="sitename">Vinyl4u</div>
+
+        <div class="siteplace">Payment</div>
+
+        <ul class="nav-menu">
+            <li class="name2"><a href="index.html">Home</a></li>
+            <li class="name2"><a href="search.html">search</a></li>
+            <li class="name2"><a href="rock.html">Rock (ska bort)</a></li>
+            <li class="name2"><a href="payment.html">pay, bort</a></li>
+            <li class="name2"><a href="Home">About</a></li>
+        </ul>
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <div class="row">
       <div class="col-75">
         <div class="container">
@@ -45,13 +68,6 @@
                   name="address"
                   placeholder="542 W. 15th Street"
                 />
-                <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input
-                  type="text"
-                  id="city"
-                  name="city"
-                  placeholder="New York"
-                />
 
                 <div class="row">
                   <div class="col-50">
@@ -83,7 +99,7 @@
                   <i class="fa fa-cc-mastercard" style="color: red"></i>
                   <i class="fa fa-cc-discover" style="color: orange"></i>
                 </div>
-                <label for="cname">Name on Card</label>
+                <h3>Name on Card</h3>
                 <input
                   type="text"
                   id="cname"
@@ -126,13 +142,13 @@
               <input type="checkbox" checked="checked" name="sameadr" />
               Shipping address same as billing
             </label>
-            <input type="submit" value="Continue to checkout" class="btn" />
+            <a href="thanks.html" class="btn">place order and pay </a>
           </form>
         </div>
       </div>
 
       <div class="col-25">
-        <div class="container">
+        <div class="container2">
           <h4>
             Cart
             <span class="price" style="color: black">
