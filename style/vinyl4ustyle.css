@@ -146,6 +146,12 @@ p {
   top: 0;
   position: relative;
 }
+.herotxt {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 40%;
+  color: rgb(251, 248, 252);
+}
 .recomended {
   width: 82%;
   height: 500px;
@@ -229,7 +235,6 @@ p {
 }
 
 #myUL {
-  /* Remove default list styling */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -242,14 +247,32 @@ p {
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6; /* Grey background color */
   padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
   display: block; /* Make it into a block element to fill the whole list */
 }
 
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+.cat1 {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+  gap: 16px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: solid rgb(147, 9, 9) 2px;
+}
+.cathead {
+  color: white;
+  font-size: 1.5rem;
+  font-family: jockey;
+  margin-left: 15%;
+  margin-top: 20px;
 }
 
 /*Rock*/
