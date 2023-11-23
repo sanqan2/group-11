@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/vinyl4ustyle.css" />
+    <script src="./script/jscript.js" defer></script>
+    <title>search</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html"><div class="logo"></div></a>
+        <div class="sitename">Vinyl4u</div>
+
+        <div class="siteplace">search</div>
+        <div class="twoicons">
+          <img src="./pics/searchicon.png" class="icon" />
+          <img src="./pics/shoppingcart.png" class="icon" />
+        </div>
+
+        <ul class="nav-menu">
+          <li class="name2"><a href="index.html">Home</a></li>
+          <li class="name2"><a href="search.html">search</a></li>
+          <li class="name2"><a href="rock.html">Rock (ska bort)</a></li>
+          <li class="name2"><a href="payment.html">pay, bort</a></li>
+          <li class="name2"><a href="Home">About</a></li>
+        </ul>
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <input
+      class="searchbox"
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for catigories.."
+    />
+
+    <ul id="myUL">
+      <li><a href="rock.html">Rock</a></li>
+      <li><a href="Hip-hop.html">Hip-Hop</a></li>
+      <li><a href="jazz.html">Jazz</a></li>
+      <li><a href="classic.html">Classical</a></li>
+      <li><a href="jazz.html">Jazz</a></li>
+      <li><a href="classic.html">Classical</a></li>
+    </ul>
+    <p class="cathead">Rock</p>
+    <div class="cat1">
+      <a href="rock.html">
+        <div class="recomendedcat">
+          <p class="Catigori">Metall</p>
+        </div></a
+      >
+      <div class="recomendedcat">
+        <p class="Catigori">Hard Rock</p>
+      </div>
+      <div class="recomendedcat">
+        <p class="Catigori">Pop</p>
+      </div>
+      <div class="recomendedcat">
+        <p class="Catigori">Jazz</p>
+      </div>
+      <div class="recomendedcat">
+        <p class="Catigori">Classic</p>
+      </div>
+    </div>
+
+    <p class="cathead">Pop</p>
+    <br />
+
+    <div class="cat1">
+      <a href="rock.html">
+        <div class="recomendedcat">
+          <p class="Catigori">?</p>
+        </div></a
+      >
+      <div class="recomendedcat">
+        <p class="Catigori">?</p>
+      </div>
+      <div class="recomendedcat">
+        <p class="Catigori">?</p>
+      </div>
+      <div class="recomendedcat">
+        <p class="Catigori">?</p>
+      </div>
+    </div>
+
+    <p class="cathead">Hip-Hop</p>
+    <br />
+
+    <div class="cat1">
+      <a href="rock.html">
+        <div class="recomendedcat" onclick="window.location.href" ="rock.html">
+          <p class="Catigori">Rock</p>
+        </div></a
+      >
+      <div class="recomendedcat" onclick="window.location.href" ="rock.html">
+        <p class="Catigori">Hip-Hop</p>
+      </div>
+    </div>
+  </body>
+</html>

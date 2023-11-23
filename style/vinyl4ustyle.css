@@ -1,0 +1,473 @@
+@font-face {
+  font-family: jockey;
+  src: url(jockeyone.ttf);
+}
+body {
+  background-color: rgb(33, 2, 5);
+  margin: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-family: jockey;
+}
+.sitename {
+  color: white;
+  padding-top: 5px;
+  font-family: jockey;
+  font-size: 1.6rem;
+  margin-left: 4%;
+  width: 10px;
+}
+.siteplace {
+  font-family: jockey;
+  height: 100%;
+  width: 50px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-left: 34%;
+}
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+header {
+  background-color: red;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-size: 2rem;
+}
+.name2 {
+  transition: 0, 7s ease;
+}
+.name2 :hover {
+  color: blue;
+}
+.menu {
+  cursor: pointer;
+  display: block;
+  margin-left: 3%;
+}
+.menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgb(116, 91, 91);
+  width: 40%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.name2 {
+  margin: 16px 0;
+}
+.nav-menu.active {
+  right: 0;
+}
+.bar {
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+.logo {
+  width: 68px;
+  height: 68px;
+  margin-top: 1px;
+  margin-left: 8px;
+  background-image: url("../pics/logo\ with\ text\ kopia.svg");
+  background-size: cover;
+}
+.twoicons {
+  height: 100%;
+  border-right: solid 2px black;
+  border-left: solid 2px black;
+  margin-left: 34%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+p {
+  margin-top: 50px;
+}
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(111, 89, 89);
+}
+/*Index page*/
+.heroelement {
+  width: 82%;
+  height: 290px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-family: jockey;
+  color: white;
+  background-image: url("../pics/vinyl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heropic {
+  width: 100%;
+  height: 110%;
+  top: 0;
+  position: relative;
+}
+.herotxt {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 40%;
+  color: rgb(251, 248, 252);
+}
+.recomended {
+  width: 82%;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.recomendedcat {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(167, 13, 13);
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  box-shadow: #0f191d 2px 2px;
+  cursor: pointer;
+  border: solid white 1px;
+  box-shadow: #040101 0px 2px;
+}
+.recomendedvinyl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  box-shadow: #0f191d 2px 2px;
+  cursor: pointer;
+  border: solid white 1px;
+}
+.cathead2 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: jockey;
+  margin-left: 9%;
+  margin-top: 14px;
+}
+.lilpic {
+  width: 100%;
+  height: 70%;
+  background-color: rgb(61, 143, 143);
+}
+.lilinfo {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(5, 28, 25);
+}
+.Catigori {
+  padding-top: 20%;
+  font-family: jockey;
+  font-size: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .recomended {
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+  }
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+  }
+}
+
+/*search page*/
+
+.searchbox {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: solid 3px blue;
+}
+
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 70%;
+  margin-left: 15%;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+.cat1 {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+  gap: 16px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: solid rgb(147, 9, 9) 2px;
+}
+.cathead {
+  color: white;
+  font-size: 1.5rem;
+  font-family: jockey;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+
+/*Rock*/
+.rockcatall {
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 12px;
+  gap: 16px;
+}
+.rockcat {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(167, 13, 13);
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  box-shadow: #0f191d 2px 2px;
+  cursor: pointer;
+  border: solid white 1px;
+  box-shadow: #040101 0px 2px;
+}
+.cattext {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 12px;
+  font-family: jockey;
+}
+/*vinyl info pages*/
+.firstdiv {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.picdiv {
+  width: 40%;
+  height: 400px;
+  margin-left: 5%;
+  background-color: #bf431a;
+  opacity: 60%;
+  border: solid 2px white;
+}
+.bigpic {
+  width: 70%;
+  height: 90%;
+  margin-left: 15%;
+  margin-top: 16px;
+  background-image: url("../pics/bestofacdc.jpg");
+}
+.Productpic {
+  margin: 0 auto;
+}
+.infobox {
+  width: 55%;
+  height: 400px;
+  font-family: jockey;
+  color: white;
+}
+.vinylinfo {
+  margin-left: 25%;
+  font-size: 2rem;
+}
+.vinylinfo2 {
+  margin-left: 25%;
+  font-size: 1.5rem;
+}
+.vinylinfo3 {
+  margin-top: 12px;
+  margin-left: 25%;
+  font-size: 1rem;
+}
+
+/*paymentpage*/
+
+h3 {
+  color: white;
+}
+.payment {
+  color: red;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: rgb(33, 2, 5);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.container2 {
+  background-color: rgb(72, 42, 45);
+  color: white;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #cbbcb4;
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #bfa61a;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* about*/
+.about {
+  background-color: rgb(65, 63, 63);
+}
