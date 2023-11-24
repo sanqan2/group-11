@@ -716,3 +716,34 @@ button:hover {
   color: white;
   transition: 0.1s;
 }
+
+/* Anton */
+footer {
+  width: 100%;
+  background-color: rgb(211, 191, 191);
+  margin: auto;
+  padding: 2rem 10rem 2rem 10rem;
+}
+
+section.innerFooter {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+}
+
+div.footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+h2.footerLinks {
+  font-family: jockey;
+}
+
+a.footerLinks {
+  text-decoration: none;
+  color: #000;
+}
+a.footerLinks:hover {
+  text-decoration: underline;
+  color: coral;
+}
