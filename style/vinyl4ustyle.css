@@ -399,10 +399,8 @@ p {
   box-shadow: #040101 0px 2px;
 }
 /*Album cover images and Album/Artist description and (price not done yet)*/
-.ACDCimage {
-  width: 100%;
-}
-.descACDC {
+/*Best of ACDC*/
+.Albumtext {
   width: 101.4%;
   height: 110px;
   margin-top: 10px;
@@ -414,13 +412,35 @@ p {
   text-align: left;
   border: solid white 2px;
 }
-.descGreyACDC {
+.Artisttext {
   margin-top: -80px;
-  margin-left: -205px;
+  text-align-last: left;
+  padding: 2px 5px;
   font-family: jockey;
   font-size: 1.4rem;
   color: #b3b3b3;
 }
+/*ACDC*/
+.ACDCimage {
+  width: 100%;
+}
+/*Ghost*/
+.Ghostimage {
+  width: 100%;
+}
+/*Iron Maiden*/
+.IronMaidenimage {
+  width: 100%;
+}
+/*Judas Pries Painkiller*/
+.Painkillerimage {
+  width: 100%;
+}
+/*Kiss*/
+.Kissimage {
+  width: 100%;
+}
+
 .cattext {
   width: 90%;
   margin: 0 auto;
@@ -715,35 +735,4 @@ button:hover {
   background-color: red;
   color: white;
   transition: 0.1s;
-}
-
-/* Anton */
-footer {
-  width: 100%;
-  background-color: rgb(211, 191, 191);
-  margin: auto;
-  padding: 2rem 10rem 2rem 10rem;
-}
-
-section.innerFooter {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr) 1fr;
-}
-
-div.footerLinks {
-  display: flex;
-  flex-direction: column;
-}
-
-h2.footerLinks {
-  font-family: jockey;
-}
-
-a.footerLinks {
-  text-decoration: none;
-  color: #000;
-}
-a.footerLinks:hover {
-  text-decoration: underline;
-  color: coral;
 }
