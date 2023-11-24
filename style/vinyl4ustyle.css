@@ -29,6 +29,7 @@ a {
 .siteplace {
   font-family: jockey;
   height: 100%;
+  width: 50px;
   padding-top: 5px;
   text-align: center;
   font-size: 1.6rem;
