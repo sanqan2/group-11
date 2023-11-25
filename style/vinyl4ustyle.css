@@ -320,7 +320,7 @@ p {
   margin-top: 16px;
   border: solid 3px blue;
 }
-
+/*  <!-- The following 33 lines of code was adapted from https://www.w3schools.com/howto/howto_js_filter_lists.asp: 2023-11-16 -->*/
 #myInput {
   background-image: url("/css/searchicon.png"); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
