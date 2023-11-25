@@ -107,10 +107,11 @@ li {
 }
 
 .logo {
-  width: 68px;
+  width: 66px;
   height: 68px;
   margin-top: 1px;
   margin-left: 8px;
+  background-image: url(../pics/logo\ with\ text\ kopia.svg);
 }
 
 .twoicons {
@@ -601,6 +602,11 @@ span.price {
   color: grey;
 }
 
+.payform{
+  width: 100%;
+  height: 100%;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
@@ -708,7 +714,7 @@ textarea:hover {
   transition: 0.1s;
 }
 
-input {
+.aboutinput {
   height: 50px;
 }
 
