@@ -765,3 +765,12 @@ div.footerLinks {
   display: flex;
   flex-direction: column;
 }
+
+a.footerLinks {
+  color: #000;
+  text-decoration: none;
+}
+a.footerLinks:hover {
+  color: coral;
+  transition: 0.2s;
+}
