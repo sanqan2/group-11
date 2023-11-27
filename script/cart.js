@@ -1,4 +1,4 @@
-let vinyls = `[
+let vinyls = [
   {
     name: "bestofacdc",
     year: 1989,
@@ -8,7 +8,7 @@ let vinyls = `[
     name: "ghost",
     year: 1289,
     price: 140,
-  },
-]`
+  }
+]
 
-console.log(JSON.parse(vinyls)[0].name);
+console.log(vinyls);

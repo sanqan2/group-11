@@ -440,54 +440,7 @@ p {
 .ACDCimage {
   width: 100%;
   height: 100%;
-}
-.Ghostimage {
-  width: 100%;
-  height: 100%;
-}
-.IronMaidenimage {
-  width: 100%;
-  height: 100%;
-}
-.Painkillerimage {
-  width: 100%;
-  height: 100%;
-}
-.Kissimage {
-  width: 100%;
-  height: 100%;
-}
-.Motörheadimage {
-  width: 100%;
-  height: 100%;
-}
-.Metallicaimage {
-  width: 100%;
-  height: 100%;
-}
-.MarilynManson {
-  width: 100%;
-  height: 100%;
-}
-.LedZepplinimage {
-  width: 100%;
-  height: 100%;
-}
-.Ramonesimage {
-  width: 100%;
-  height: 100%;
-}
-.Mötleycrueimage {
-  width: 100%;
-  height: 100%;
-}
-.Ozzyimage {
-  width: 100%;
-  height: 100%;
-}
-.BlackSabbathimage {
-  width: 100%;
-  height: 100%;
+  text-decoration: none;
 }
 
 .cattext {
