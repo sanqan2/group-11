@@ -204,10 +204,15 @@ p {
   background-color: rgb(61, 143, 143);
 }
 
-.lilinfo {
+.indexvinyls {
   width: 100%;
-  height: 30%;
-  background-color: rgb(5, 28, 25);
+  height: 90%;
+  background-color: rgb(167, 13, 13);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: solid white 2px;
+  box-shadow: #040101 0px 2px;
 }
 
 .Catigori {
@@ -410,7 +415,7 @@ p {
 /*Best of ACDC*/
 .Albumtext {
   width: 101.4%;
-  height: 110px;
+  height: 40%;
   margin-top: 10px;
   margin-left: -1.5px;
   background-color: rgb(167, 13, 13);
@@ -459,7 +464,7 @@ p {
 }
 .picdiv {
   width: 40%;
-  height: 400px;
+
   margin-left: 5%;
   background-color: #bf431a;
   opacity: 60%;
