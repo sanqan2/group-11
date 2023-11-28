@@ -685,7 +685,7 @@ form {
   position: relative;
 }
 
-input,
+.aboutinput,
 textarea {
   width: 100%;
   padding: 10px;
@@ -742,18 +742,33 @@ button {
   letter-spacing: 0.07rem;
   background-color: rgb(211, 191, 191);
 }
-
+#redbtn {
+  color: black;
+}
+#hiddendiv {
+  width: 70%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: red;
+  border: solid white 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+  display: none;
+}
 button:hover {
   background-color: red;
   color: white;
   transition: 0.1s;
 }
-
+/*fotter*/
 footer {
   width: 100%;
   background-color: darkgray;
   margin: auto;
   padding: 2rem 10rem 2rem 10rem;
+  margin-top: 10%;
 }
 
 section.innerFooter {
