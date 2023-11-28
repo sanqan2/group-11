@@ -850,7 +850,7 @@ svg {
 /* Cart */
 img.cart {
   object-fit: contain;
-  height: 11rem;
+  height: 9rem;
 }
 
 .cartContainer {
@@ -862,23 +862,23 @@ img.cart {
 .cartImage {
   width: min-content;
   height: 15rem;
-  padding: 2rem;
-  background: #cbbcb4;
+  padding:2rem;
+  background:#cbbcb4;
 }
 
-.cartProduct {
+.cartProduct{
   background-color: rgb(49, 23, 23);
   border: 2px solid white;
-  margin: auto;
+  margin:auto;
   display: flex;
   flex-direction: row;
   width: 82%;
-  height: 15rem;
-  object-fit: contain;
+  height:15rem;
+    object-fit: contain;
 }
 
-.cartInfo {
-  padding: 2rem;
+.cartInfo{
+  padding:2rem;
 }
 
 h2.cart,
@@ -888,17 +888,6 @@ p.cart {
   color: #ffffff;
 }
 
-.cartActionContainer {
-  width: 0.5rem;
-}
-.checkoutdiv {
-  width: 20%;
-  height: 50px;
-  padding-top: 1%;
-  background-color: red;
-  color: white;
-  text-align: center;
-  font-family: jockey;
-  margin-top: 10%;
-  margin-left: 60%;
+.cartActionContainer{
+  width:.5rem;
 }
