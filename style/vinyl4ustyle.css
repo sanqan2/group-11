@@ -404,13 +404,6 @@ p {
   border: solid white 2px;
   box-shadow: #040101 0px 2px;
 }
-/*Footer for rock pages*/
-.rockfooter {
-  width: 100%;
-  height: 120px;
-  margin-top: 150px;
-  background-color: rgb(111, 89, 89);
-}
 /*Album cover images and Album/Artist description and (price not done yet)*/
 /*Best of ACDC*/
 .Albumtext {
@@ -499,7 +492,16 @@ p {
   margin-left: 25%;
   font-size: 1rem;
 }
-
+.addtocartdiv {
+  width: 20%;
+  height: 50px;
+  padding-top: 1%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: jockey;
+  margin-left: 60%;
+}
 /*paymentpage*/
 
 h3 {
@@ -809,10 +811,9 @@ a.footerLinks:hover {
   mask-repeat: no-repeat;
 }
 
-svg{
+svg {
   width: max-content;
   object-fit: fill;
-  
 }
 
 .icon:hover {
@@ -847,46 +848,57 @@ svg{
 }
 
 /* Cart */
-img.cart{
+img.cart {
   object-fit: contain;
   height: 11rem;
 }
 
-.cartContainer{
+.cartContainer {
   margin: auto;
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.cartImage{
+.cartImage {
   width: min-content;
   height: 15rem;
-  padding:2rem;
-  background:#cbbcb4;
+  padding: 2rem;
+  background: #cbbcb4;
 }
 
-.cartProduct{
+.cartProduct {
   background-color: rgb(49, 23, 23);
   border: 2px solid white;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: row;
   width: 82%;
-  height:15rem;
-    object-fit: contain;
+  height: 15rem;
+  object-fit: contain;
 }
 
-.cartInfo{
-  padding:2rem;
+.cartInfo {
+  padding: 2rem;
 }
 
-h2.cart,p.cart{
+h2.cart,
+p.cart {
   font-family: Jockey;
   margin: 0px;
   color: #ffffff;
-
 }
 
-.cartActionContainer{
-  width:.5rem;
+.cartActionContainer {
+  width: 0.5rem;
+}
+.checkoutdiv {
+  width: 20%;
+  height: 50px;
+  padding-top: 1%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: jockey;
+  margin-top: 10%;
+  margin-left: 60%;
 }
