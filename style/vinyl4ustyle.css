@@ -866,9 +866,11 @@ img.cart{
 }
 
 .cartProduct{
+
   background-color: rgb(49, 23, 23);
   border: 2px solid white;
   margin:auto;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   width: 62%;
