@@ -198,12 +198,6 @@ p {
   margin-top: 14px;
 }
 
-.lilpic {
-  width: 100%;
-  height: 70%;
-  background-color: rgb(61, 143, 143);
-}
-
 .indexvinyls {
   width: 100%;
   height: 90%;
@@ -266,10 +260,6 @@ p {
     width: 100%;
   }
 
-  .sitename {
-    display: none;
-  }
-
   .logo {
     height: 45px;
     width: 45px;
@@ -283,11 +273,6 @@ p {
     padding-right: 5px;
     border: none;
     padding-right: 16px;
-  }
-
-  .icon {
-    width: 22px;
-    height: 22px;
   }
 
   .menu {
@@ -764,6 +749,21 @@ button:hover {
   color: white;
   transition: 0.1s;
 }
+/*complete*/
+.bodycomplete {
+  background-image: url(../pics/completepic.svg);
+}
+.thanks {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 10%;
+  font-family: jockey;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 2rem;
+  color: white;
+}
 /*fotter*/
 footer {
   width: 100%;
@@ -862,23 +862,23 @@ img.cart {
 .cartImage {
   width: min-content;
   height: 15rem;
-  padding:2rem;
-  background:#cbbcb4;
+  padding: 2rem;
+  background: #cbbcb4;
 }
 
-.cartProduct{
+.cartProduct {
   background-color: rgb(49, 23, 23);
   border: 2px solid white;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: row;
   width: 82%;
-  height:15rem;
-    object-fit: contain;
+  height: 15rem;
+  object-fit: contain;
 }
 
-.cartInfo{
-  padding:2rem;
+.cartInfo {
+  padding: 2rem;
 }
 
 h2.cart,
@@ -888,6 +888,6 @@ p.cart {
   color: #ffffff;
 }
 
-.cartActionContainer{
-  width:.5rem;
+.cartActionContainer {
+  width: 0.5rem;
 }
