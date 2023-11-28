@@ -198,12 +198,6 @@ p {
   margin-top: 14px;
 }
 
-.lilpic {
-  width: 100%;
-  height: 70%;
-  background-color: rgb(61, 143, 143);
-}
-
 .indexvinyls {
   width: 100%;
   height: 90%;
@@ -266,10 +260,6 @@ p {
     width: 100%;
   }
 
-  .sitename {
-    display: none;
-  }
-
   .logo {
     height: 45px;
     width: 45px;
@@ -283,11 +273,6 @@ p {
     padding-right: 5px;
     border: none;
     padding-right: 16px;
-  }
-
-  .icon {
-    width: 22px;
-    height: 22px;
   }
 
   .menu {
@@ -764,6 +749,21 @@ button:hover {
   color: white;
   transition: 0.1s;
 }
+/*complete*/
+.bodycomplete {
+  background-image: url(../pics/completepic.svg);
+}
+.thanks {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 10%;
+  font-family: jockey;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 2rem;
+  color: white;
+}
 /*fotter*/
 footer {
   width: 100%;
@@ -848,7 +848,6 @@ svg {
 }
 
 /* Cart */
-/* Cart */
 img.cart{
   object-fit: contain;
   height: 9rem;
@@ -919,9 +918,13 @@ font-size: .9rem;
 }
 
 .checkoutButtonContainer{
-  width: 62%;
+  width:62%;
   margin:auto;
+  padding:2rem;
   display: flex;
   flex-direction: row-reverse;
-  padding-right:2rem;
+}
+
+button.checkout{
+  padding:.3rem 1rem .3rem 1rem;
 }
