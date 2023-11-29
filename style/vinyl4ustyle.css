@@ -187,8 +187,8 @@ p {
   text-align: center;
   box-shadow: #0f191d 2px 2px;
   cursor: pointer;
-  border: solid white 1px;
 }
+
 .cathead2 {
   color: white;
   font-size: 1.5rem;
@@ -209,11 +209,51 @@ p {
   background-color: rgb(5, 28, 25);
 }
 
+.lilpic, .lilinfo {
+  border: solid white 1px;
+}
+
 .Catigori {
   padding-top: 15%;
   font-family: jockey;
   font-size: 1rem;
 }
+
+/*index responsive*/
+
+@media screen and (max-width: 500px) {
+
+  .cathead2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .recomendedcat {
+    height: 150px;
+    width: 150px;
+    grid-template-columns: repeat(1, 1fr)
+  }
+  
+  .recomendedvinyl {
+    height: 150px;
+    width: 150px;
+  }
+
+  .lilpic {
+   width: 100%;
+   height: 100%;
+  }
+
+  .lilinfo {
+    padding-top: 45px;
+    
+  }
+
+    
+  
+}
+
+
 
 @media screen and (max-width: 1167px) {
   .siteplace {
@@ -551,7 +591,7 @@ span.price {
   }
 }
 
-/* about*/
+/*about*/
 
 .about {
   background-color: rgb(65, 63, 63);
@@ -691,6 +731,49 @@ button:hover {
   color: white;
   transition: 0.1s;
 }
+
+@media screen and (max-width: 500px) {
+  .story {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .storytext p {
+    width: 80%;
+    font-size: 17px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .inputgroup {
+    padding-right: 10px;
+  }
+
+  button {
+    width: 103%;
+  }
+
+  .contactus {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .conmail {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  textarea {
+    height: 250px;
+  }
+
+}
+
 
 /* Anton */
 footer {
