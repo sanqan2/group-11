@@ -84,8 +84,10 @@ li {
   top: 70px;
   gap: 0;
   flex-direction: column;
-  background-color: rgb(116, 91, 91);
+  background-color: white;
   width: 40%;
+  font-family: jockey;
+  font-size: 1.2rem;
   text-align: center;
   transition: 0.3s;
 }
@@ -107,29 +109,21 @@ li {
 }
 
 .logo {
-  width: 68px;
+  width: 66px;
   height: 68px;
   margin-top: 1px;
   margin-left: 8px;
+  background-image: url(../pics/logo\ with\ text\ kopia.svg);
 }
 
 .twoicons {
   height: 100%;
-  border-right: solid 2px black;
-  border-left: solid 2px black;
   margin-left: 34%;
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-p {
-  margin-top: 50px;
-}
-.footer {
-  width: 100%;
-  height: 120px;
-  background-color: rgb(111, 89, 89);
-}
+
 /*Index page*/
 .heroelement {
   width: 82%;
@@ -162,14 +156,13 @@ p {
   margin-top: 40px;
   margin-bottom: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 1vw;
 }
 
 .recomendedcat {
   width: 100%;
-  height: 200px;
+  height: 15vw;
   background-color: rgb(167, 13, 13);
   text-align: center;
   font-size: 1rem;
@@ -178,7 +171,16 @@ p {
   cursor: pointer;
   border: solid white 1px;
   box-shadow: #040101 0px 2px;
+  margin: auto;
 }
+
+.catTextWrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .recomendedvinyl {
   display: flex;
   flex-direction: column;
@@ -197,16 +199,24 @@ p {
   margin-top: 14px;
 }
 
-.lilpic {
-  width: 100%;
-  height: 70%;
-  background-color: rgb(61, 143, 143);
+.indexvinyls {
+  width: 15vw;
+  height: 15vw;
+  object-fit: contain;
+  background-color: rgb(167, 13, 13);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: solid white 1px;
+  box-shadow: #040101 0px 2px;
 }
 
-.lilinfo {
-  width: 100%;
-  height: 30%;
-  background-color: rgb(5, 28, 25);
+p.Catigori {
+  padding-top: 6.8vw;
+  height: 15vw;
+  width: 15vw;
+  text-align: center;
+  margin: auto;
 }
 
 .lilpic, .lilinfo {
@@ -214,7 +224,6 @@ p {
 }
 
 .Catigori {
-  padding-top: 15%;
   font-family: jockey;
   font-size: 1rem;
 }
@@ -300,10 +309,6 @@ p {
     width: 100%;
   }
 
-  .sitename {
-    display: none;
-  }
-
   .logo {
     height: 45px;
     width: 45px;
@@ -317,11 +322,6 @@ p {
     padding-right: 5px;
     border: none;
     padding-right: 16px;
-  }
-
-  .icon {
-    width: 22px;
-    height: 22px;
   }
 
   .menu {
@@ -360,7 +360,7 @@ p {
   margin-top: 16px;
   border: solid 3px blue;
 }
-
+/*  <!-- The following 33 lines of code was adapted from https://www.w3schools.com/howto/howto_js_filter_lists.asp: 2023-11-16 -->*/
 #myInput {
   background-image: url("/css/searchicon.png"); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
@@ -423,25 +423,64 @@ p {
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 auto;
   margin-top: 12px;
-  gap: 16px;
+  gap: 15px;
+  row-gap: 150px; /*fix rowgap */
 }
 .rockcat {
   width: 100%;
-  height: 250px;
+  height: 261px;
   background-color: rgb(167, 13, 13);
   text-align: center;
   font-size: 1rem;
   color: white;
   box-shadow: #0f191d 2px 2px;
   cursor: pointer;
-  border: solid white 1px;
+  border: solid white 2px;
   box-shadow: #040101 0px 2px;
 }
+/*Album cover images and Album/Artist description and (price not done yet)*/
+/*Best of ACDC*/
+.Albumtext {
+  width: 100%;
+  height: 6vw;
+  margin-top: 1vw;
+  /* margin-left: -1.5px; */
+  background-color: rgb(167, 13, 13);
+  font-family: jockey;
+  font-size: 1.4rem;
+  padding: 2px 5px;
+  text-align: left;
+  border: solid white 1px;
+}
+.Artisttext {
+  margin-top: -80px;
+  text-align-last: left;
+  padding: 2px 5px;
+  font-family: jockey;
+  font-size: 1.4rem;
+  color: #b3b3b3;
+}
+.PriceText {
+  margin-top: 10px;
+  text-align-last: left;
+  padding: 2px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+/*Artist albums images*/
+.ACDCimage {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
 .cattext {
   width: 90%;
   margin: 0 auto;
   margin-top: 12px;
   font-family: jockey;
+  font-size: 2rem;
 }
 /*vinyl info pages*/
 .firstdiv {
@@ -452,7 +491,7 @@ p {
 }
 .picdiv {
   width: 40%;
-  height: 400px;
+
   margin-left: 5%;
   background-color: #bf431a;
   opacity: 60%;
@@ -487,7 +526,16 @@ p {
   margin-left: 25%;
   font-size: 1rem;
 }
-
+.addtocartdiv {
+  width: 20%;
+  height: 50px;
+  padding-top: 1%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: jockey;
+  margin-left: 60%;
+}
 /*paymentpage*/
 
 h3 {
@@ -530,14 +578,14 @@ h3 {
   background-color: rgb(33, 2, 5);
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 .container2 {
   background-color: rgb(72, 42, 45);
   color: white;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 input[type="text"] {
@@ -545,7 +593,7 @@ input[type="text"] {
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 label {
@@ -579,6 +627,11 @@ label {
 span.price {
   float: right;
   color: grey;
+}
+
+.payform {
+  width: 100%;
+  height: 100%;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
@@ -663,12 +716,17 @@ form {
   margin-top: 30px;
 }
 
+div.flexright {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .inputgroup {
   margin: -10px;
   position: relative;
 }
 
-input,
+.aboutinput,
 textarea {
   width: 100%;
   padding: 10px;
@@ -679,6 +737,8 @@ textarea {
   font-family: jockey;
   padding-bottom: 15px;
   background-color: rgb(211, 191, 191);
+  border-radius: 0%;
+  resize: vertical;
 }
 
 input:hover,
@@ -688,7 +748,7 @@ textarea:hover {
   transition: 0.1s;
 }
 
-input {
+.aboutinput {
   height: 50px;
 }
 
@@ -714,9 +774,9 @@ label {
 
 button {
   border: 1px solid rgb(72, 42, 45);
-  margin-left: -9px;
+  /* margin-left: -9px; */
   background-color: white;
-  padding: 15px 40px;
+  /* padding: 1rem; */
   margin-top: 20px;
   font-family: jockey;
   font-size: 20px;
@@ -725,12 +785,24 @@ button {
   letter-spacing: 0.07rem;
   background-color: rgb(211, 191, 191);
 }
-
+#hiddendiv {
+  width: 70%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: red;
+  border: solid white 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+  display: none;
+}
 button:hover {
   background-color: red;
   color: white;
   transition: 0.1s;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 500px) {
   .story {
@@ -776,32 +848,202 @@ button:hover {
 
 
 /* Anton */
+=======
+/*complete*/
+.bodycomplete {
+  background-image: url(../pics/completepic.svg);
+}
+.thanks {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 10%;
+  font-family: jockey;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 2rem;
+  color: white;
+}
+/*fotter*/
+>>>>>>> 310df7c7a625bb44ab6cce7172c01826771699bd
 footer {
   width: 100%;
-  background-color: rgb(211, 191, 191);
+  background-color: darkgray;
   margin: auto;
   padding: 2rem 10rem 2rem 10rem;
+  margin-top: 10%;
 }
 
 section.innerFooter {
   display: grid;
-  grid-template-columns: repeat(2, 2fr) 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 32px;
+  width: 82%;
+  margin: auto;
 }
 
 div.footerLinks {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
-h2.footerLinks {
-  font-family: jockey;
+.footerSocials {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
 }
 
 a.footerLinks {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 a.footerLinks:hover {
-  text-decoration: underline;
-  color: coral;
+  color: #bf431a;
+  transition: 0.2s;
+}
+
+/* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
+.icon,
+.iconNav {
+  background: #000;
+  /* margin-right: 0.8rem; */
+  margin: auto;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+svg {
+  width: max-content;
+  object-fit: fill;
+}
+
+.icon:hover {
+  background: #bf431a;
+  transition: 0.2s;
+}
+.iconNav:hover {
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+/* svg{
+  margin: auto;
+  width: 100%;
+  padding: 100%;
+} */
+
+#iconIG {
+  -webkit-mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg==");
+  mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg==");
+}
+#iconFB {
+  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTcsM0g3QzQuNzkxLDMsMyw0Ljc5MSwzLDd2MTBjMCwyLjIwOSwxLjc5MSw0LDQsNGg1LjYyMXYtNi45NjFoLTIuMzQzdi0yLjcyNWgyLjM0M1Y5LjMwOSBjMC0yLjMyNCwxLjQyMS0zLjU5MSwzLjQ5NS0zLjU5MWMwLjY5OS0wLjAwMiwxLjM5NywwLjAzNCwyLjA5MiwwLjEwNXYyLjQzaC0xLjQyOGMtMS4xMywwLTEuMzUsMC41MzQtMS4zNSwxLjMyMnYxLjczNWgyLjcgbC0wLjM1MSwyLjcyNWgtMi4zNjVWMjFIMTdjMi4yMDksMCw0LTEuNzkxLDQtNFY3QzIxLDQuNzkxLDE5LjIwOSwzLDE3LDN6Ii8+PC9zdmc+);
+  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTcsM0g3QzQuNzkxLDMsMyw0Ljc5MSwzLDd2MTBjMCwyLjIwOSwxLjc5MSw0LDQsNGg1LjYyMXYtNi45NjFoLTIuMzQzdi0yLjcyNWgyLjM0M1Y5LjMwOSBjMC0yLjMyNCwxLjQyMS0zLjU5MSwzLjQ5NS0zLjU5MWMwLjY5OS0wLjAwMiwxLjM5NywwLjAzNCwyLjA5MiwwLjEwNXYyLjQzaC0xLjQyOGMtMS4xMywwLTEuMzUsMC41MzQtMS4zNSwxLjMyMnYxLjczNWgyLjcgbC0wLjM1MSwyLjcyNWgtMi4zNjVWMjFIMTdjMi4yMDksMCw0LTEuNzkxLDQtNFY3QzIxLDQuNzkxLDE5LjIwOSwzLDE3LDN6Ii8+PC9zdmc+);
+}
+#iconSpotify {
+  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTIsMkM2LjUsMiwyLDYuNSwyLDEyczQuNSwxMCwxMCwxMHMxMC00LjUsMTAtMTBTMTcuNSwyLDEyLDJ6IE0xNi4wNTcsMTYuNDA2Yy0wLjE4OCwwLTAuMjgyLTAuMDk0LTAuNDctMC4xODggYy0xLjQxMS0wLjg0Ny0zLjE5OC0xLjMxNy01LjA3OS0xLjMxN2MtMS4wMzUsMC0yLjE2MywwLjE4OC0zLjEwNCwwLjM3NmMtMC4xODgsMC0wLjM3NiwwLjA5NC0wLjQ3LDAuMDk0IGMtMC4zNzYsMC0wLjY1OC0wLjI4Mi0wLjY1OC0wLjY1OGMwLTAuMzc2LDAuMTg4LTAuNjU4LDAuNTY0LTAuNjU4YzEuMjIzLTAuMjgyLDIuNDQ2LTAuNDcsMy43NjMtMC40NyBjMi4xNjMsMCw0LjEzOSwwLjU2NCw1LjgzMiwxLjUwNWMwLjE4OCwwLjE4OCwwLjM3NiwwLjI4MiwwLjM3NiwwLjY1OEMxNi42MjEsMTYuMjE4LDE2LjMzOSwxNi40MDYsMTYuMDU3LDE2LjQwNnogTTE3LjA5MSwxMy43NzMgYy0wLjE4OCwwLTAuMzc2LTAuMDk0LTAuNTY0LTAuMTg4Yy0xLjU5OS0xLjAzNS0zLjg1Ny0xLjU5OS02LjMwMi0xLjU5OWMtMS4yMjMsMC0yLjM1MiwwLjE4OC0zLjE5OCwwLjM3NiBjLTAuMTg4LDAuMDk0LTAuMjgyLDAuMDk0LTAuNDcsMC4wOTRjLTAuNDcsMC0wLjc1My0wLjM3Ni0wLjc1My0wLjc1M2MwLTAuNDcsMC4xODgtMC42NTgsMC42NTgtMC44NDcgYzEuMTI5LTAuMjgyLDIuMjU4LTAuNTY0LDMuODU3LTAuNTY0YzIuNjM0LDAsNS4wNzksMC42NTgsNy4xNDksMS44ODFjMC4yODIsMC4xODgsMC40NywwLjQ3LDAuNDcsMC43NTMgQzE3Ljg0NCwxMy4zOTYsMTcuNTYyLDEzLjc3MywxNy4wOTEsMTMuNzczeiBNMTguMzE0LDEwLjc2MmMtMC4xODgsMC0wLjI4Mi0wLjA5NC0wLjU2NC0wLjE4OCBjLTEuODgxLTEuMDM1LTQuNjA5LTEuNjkzLTcuMjQzLTEuNjkzYy0xLjMxNywwLTIuNzI4LDAuMTg4LTMuOTUxLDAuNDdjLTAuMTg4LDAtMC4yODIsMC4wOTQtMC41NjQsMC4wOTQgQzUuNDI4LDkuNTQsNS4wNTEsOS4wNjksNS4wNTEsOC41MDVjMC0wLjU2NCwwLjI4Mi0wLjg0NywwLjY1OC0wLjk0MUM3LjIxNSw3LjE4OCw4LjgxNCw3LDEwLjUwNyw3IGMyLjkxNiwwLDUuOTI2LDAuNjU4LDguMjc4LDEuODgxYzAuMjgyLDAuMTg4LDAuNTY0LDAuNDcsMC41NjQsMC45NDFDMTkuMjU1LDEwLjM4NiwxOC44NzgsMTAuNzYyLDE4LjMxNCwxMC43NjJ6Ii8+PC9zdmc+);
+  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTIsMkM2LjUsMiwyLDYuNSwyLDEyczQuNSwxMCwxMCwxMHMxMC00LjUsMTAtMTBTMTcuNSwyLDEyLDJ6IE0xNi4wNTcsMTYuNDA2Yy0wLjE4OCwwLTAuMjgyLTAuMDk0LTAuNDctMC4xODggYy0xLjQxMS0wLjg0Ny0zLjE5OC0xLjMxNy01LjA3OS0xLjMxN2MtMS4wMzUsMC0yLjE2MywwLjE4OC0zLjEwNCwwLjM3NmMtMC4xODgsMC0wLjM3NiwwLjA5NC0wLjQ3LDAuMDk0IGMtMC4zNzYsMC0wLjY1OC0wLjI4Mi0wLjY1OC0wLjY1OGMwLTAuMzc2LDAuMTg4LTAuNjU4LDAuNTY0LTAuNjU4YzEuMjIzLTAuMjgyLDIuNDQ2LTAuNDcsMy43NjMtMC40NyBjMi4xNjMsMCw0LjEzOSwwLjU2NCw1LjgzMiwxLjUwNWMwLjE4OCwwLjE4OCwwLjM3NiwwLjI4MiwwLjM3NiwwLjY1OEMxNi42MjEsMTYuMjE4LDE2LjMzOSwxNi40MDYsMTYuMDU3LDE2LjQwNnogTTE3LjA5MSwxMy43NzMgYy0wLjE4OCwwLTAuMzc2LTAuMDk0LTAuNTY0LTAuMTg4Yy0xLjU5OS0xLjAzNS0zLjg1Ny0xLjU5OS02LjMwMi0xLjU5OWMtMS4yMjMsMC0yLjM1MiwwLjE4OC0zLjE5OCwwLjM3NiBjLTAuMTg4LDAuMDk0LTAuMjgyLDAuMDk0LTAuNDcsMC4wOTRjLTAuNDcsMC0wLjc1My0wLjM3Ni0wLjc1My0wLjc1M2MwLTAuNDcsMC4xODgtMC42NTgsMC42NTgtMC44NDcgYzEuMTI5LTAuMjgyLDIuMjU4LTAuNTY0LDMuODU3LTAuNTY0YzIuNjM0LDAsNS4wNzksMC42NTgsNy4xNDksMS44ODFjMC4yODIsMC4xODgsMC40NywwLjQ3LDAuNDcsMC43NTMgQzE3Ljg0NCwxMy4zOTYsMTcuNTYyLDEzLjc3MywxNy4wOTEsMTMuNzczeiBNMTguMzE0LDEwLjc2MmMtMC4xODgsMC0wLjI4Mi0wLjA5NC0wLjU2NC0wLjE4OCBjLTEuODgxLTEuMDM1LTQuNjA5LTEuNjkzLTcuMjQzLTEuNjkzYy0xLjMxNywwLTIuNzI4LDAuMTg4LTMuOTUxLDAuNDdjLTAuMTg4LDAtMC4yODIsMC4wOTQtMC41NjQsMC4wOTQgQzUuNDI4LDkuNTQsNS4wNTEsOS4wNjksNS4wNTEsOC41MDVjMC0wLjU2NCwwLjI4Mi0wLjg0NywwLjY1OC0wLjk0MUM3LjIxNSw3LjE4OCw4LjgxNCw3LDEwLjUwNyw3IGMyLjkxNiwwLDUuOTI2LDAuNjU4LDguMjc4LDEuODgxYzAuMjgyLDAuMTg4LDAuNTY0LDAuNDcsMC41NjQsMC45NDFDMTkuMjU1LDEwLjM4NiwxOC44NzgsMTAuNzYyLDE4LjMxNCwxMC43NjJ6Ii8+PC9zdmc+);
+}
+#iconDelete {
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
+}
+#iconCart {
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMzYiPjxwYXRoIGQ9Ik0yMjEtMTIwcS0yNyAwLTQ4LTE2LjVUMTQ0LTE3OUw0Mi01NDlxLTUtMTkgNi41LTM1VDgwLTYwMGgxOTBsMTc2LTI2MnE1LTggMTQtMTN0MTktNXExMCAwIDE5IDV0MTQgMTNsMTc2IDI2MmgxOTJxMjAgMCAzMS41IDE2dDYuNSAzNUw4MTYtMTc5cS04IDI2LTI5IDQyLjVUNzM5LTEyMEgyMjFabS0xLTgwaDUyMGw4OC0zMjBIMTMybDg4IDMyMFptMjYwLTgwcTMzIDAgNTYuNS0yMy41VDU2MC0zNjBxMC0zMy0yMy41LTU2LjVUNDgwLTQ0MHEtMzMgMC01Ni41IDIzLjVUNDAwLTM2MHEwIDMzIDIzLjUgNTYuNVQ0ODAtMjgwWk0zNjctNjAwaDIyNUw0NzktNzY4IDM2Ny02MDBabTExMyAyNDBaIi8+PC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMzYiPjxwYXRoIGQ9Ik0yMjEtMTIwcS0yNyAwLTQ4LTE2LjVUMTQ0LTE3OUw0Mi01NDlxLTUtMTkgNi41LTM1VDgwLTYwMGgxOTBsMTc2LTI2MnE1LTggMTQtMTN0MTktNXExMCAwIDE5IDV0MTQgMTNsMTc2IDI2MmgxOTJxMjAgMCAzMS41IDE2dDYuNSAzNUw4MTYtMTc5cS04IDI2LTI5IDQyLjVUNzM5LTEyMEgyMjFabS0xLTgwaDUyMGw4OC0zMjBIMTMybDg4IDMyMFptMjYwLTgwcTMzIDAgNTYuNS0yMy41VDU2MC0zNjBxMC0zMy0yMy41LTU2LjVUNDgwLTQ0MHEtMzMgMC01Ni41IDIzLjVUNDAwLTM2MHEwIDMzIDIzLjUgNTYuNVQ0ODAtMjgwWk0zNjctNjAwaDIyNUw0NzktNzY4IDM2Ny02MDBabTExMyAyNDBaIi8+PC9zdmc+");
+}
+#iconSearch {
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMzYiPjxwYXRoIGQ9Ik03ODQtMTIwIDUzMi0zNzJxLTMwIDI0LTY5IDM4dC04MyAxNHEtMTA5IDAtMTg0LjUtNzUuNVQxMjAtNTgwcTAtMTA5IDc1LjUtMTg0LjVUMzgwLTg0MHExMDkgMCAxODQuNSA3NS41VDY0MC01ODBxMCA0NC0xNCA4M3QtMzggNjlsMjUyIDI1Mi01NiA1NlpNMzgwLTQwMHE3NSAwIDEyNy41LTUyLjVUNTYwLTU4MHEwLTc1LTUyLjUtMTI3LjVUMzgwLTc2MHEtNzUgMC0xMjcuNSA1Mi41VDIwMC01ODBxMCA3NSA1Mi41IDEyNy41VDM4MC00MDBaIi8+PC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMzYiPjxwYXRoIGQ9Ik03ODQtMTIwIDUzMi0zNzJxLTMwIDI0LTY5IDM4dC04MyAxNHEtMTA5IDAtMTg0LjUtNzUuNVQxMjAtNTgwcTAtMTA5IDc1LjUtMTg0LjVUMzgwLTg0MHExMDkgMCAxODQuNSA3NS41VDY0MC01ODBxMCA0NC0xNCA4M3QtMzggNjlsMjUyIDI1Mi01NiA1NlpNMzgwLTQwMHE3NSAwIDEyNy41LTUyLjVUNTYwLTU4MHEwLTc1LTUyLjUtMTI3LjVUMzgwLTc2MHEtNzUgMC0xMjcuNSA1Mi41VDIwMC01ODBxMCA3NSA1Mi41IDEyNy41VDM4MC00MDBaIi8+PC9zdmc+");
+}
+
+/* Cart */
+img.cart {
+  object-fit: contain;
+  height: 9rem;
+}
+
+.cartContainer {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cartImage {
+  width: min-content;
+  height: 11rem;
+  padding: 1rem;
+  background: #cbbcb4;
+}
+
+.cartProduct {
+  background-color: rgb(49, 23, 23);
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 62%;
+  height: 11rem;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.cartInfo {
+  padding: 2rem;
+  width: 100%;
+}
+
+.delete {
+  width: 2rem;
+  height: 2rem;
+}
+
+h2.cart,
+p.cart {
+  font-family: Jockey;
+  margin: 0px;
+  color: #ffffff;
+}
+
+input.cartActionContainer {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.cartActionContainer {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+p.price {
+  margin: auto;
+  margin-left: 0px;
+  padding: 0%;
+  font-size: 0.9rem;
+}
+
+.checkoutButtonContainer {
+  width: 62%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.left {
+  margin-left: 0px;
+}
+
+button.standard {
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  color: #000;
+}
+
+button.standard:hover {
+  color: #fff;
+  transition: 0.2s;
 }
