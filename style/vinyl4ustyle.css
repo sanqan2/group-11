@@ -544,14 +544,14 @@ h3 {
   background-color: rgb(33, 2, 5);
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 .container2 {
   background-color: rgb(72, 42, 45);
   color: white;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 input[type="text"] {
@@ -559,7 +559,7 @@ input[type="text"] {
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 label {
@@ -682,6 +682,11 @@ form {
   margin-top: 30px;
 }
 
+div.flexright{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .inputgroup {
   margin: -10px;
   position: relative;
@@ -698,6 +703,8 @@ textarea {
   font-family: jockey;
   padding-bottom: 15px;
   background-color: rgb(211, 191, 191);
+  border-radius: 0%;
+  resize: vertical;
 }
 
 input:hover,
@@ -743,9 +750,6 @@ button {
   color: rgb(95, 95, 95);
   letter-spacing: 0.07rem;
   background-color: rgb(211, 191, 191);
-}
-#redbtn {
-  color: black;
 }
 #hiddendiv {
   width: 70%;
@@ -949,12 +953,16 @@ font-size: .9rem;
   flex-direction: row-reverse;
 }
 
-button.checkout{
+.left{
+  margin-left: 0px;}
+
+
+button.standard{
   padding:.3rem 1rem .3rem 1rem;
   color: #000;
 }
 
-button.checkout:hover{
+button.standard:hover{
   color:#fff;
   transition: 0.2s;
 }
