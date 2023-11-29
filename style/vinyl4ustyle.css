@@ -163,9 +163,8 @@ li {
   margin-top: 40px;
   margin-bottom: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 1vw;
 }
 
 .recomendedcat {
@@ -207,20 +206,21 @@ li {
 }
 
 .indexvinyls {
-  width: 100%;
-  height: 90%;
+  width: 15vw;
+  height: 15vw;
+  object-fit: contain;
   background-color: rgb(167, 13, 13);
   text-align: center;
   color: white;
   cursor: pointer;
-  border: solid white 2px;
+  border: solid white 1px;
   box-shadow: #040101 0px 2px;
 }
 
 p.Catigori{
   padding-top: 6.8vw;
-  height: 100%;
-  width: 100%;
+  height: 15vw;
+  width: 15vw;
   text-align: center;
   margin: auto;
 }
