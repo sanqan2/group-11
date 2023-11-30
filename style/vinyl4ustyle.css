@@ -219,16 +219,20 @@ p.Catigori {
   margin: auto;
 }
 
+<<<<<<< Updated upstream
 .lilpic,
 .lilinfo {
   border: solid white 1px;
 }
 
+=======
+>>>>>>> Stashed changes
 .Catigori {
   font-family: jockey;
   font-size: 1rem;
 }
 
+<<<<<<< Updated upstream
 /*index responsive*/
 
 @media screen and (max-width: 500px) {
@@ -258,6 +262,8 @@ p.Catigori {
   }
 }
 
+=======
+>>>>>>> Stashed changes
 @media screen and (max-width: 1167px) {
   .siteplace {
     font-size: 1.3rem;
@@ -558,7 +564,7 @@ h3 {
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
+  -ms-flex: 75%;
   flex: 75%;
 }
 
@@ -768,9 +774,7 @@ label {
 
 button {
   border: 1px solid rgb(72, 42, 45);
-  /* margin-left: -9px; */
   background-color: white;
-  /* padding: 1rem; */
   margin-top: 20px;
   font-family: jockey;
   font-size: 20px;
@@ -796,7 +800,12 @@ button:hover {
   color: white;
   transition: 0.1s;
 }
+<<<<<<< Updated upstream
 <<<<<<< HEAD @media screen and (max-width: 500px) {
+=======
+
+@media screen and (max-width: 500px) {
+>>>>>>> Stashed changes
   .story {
     width: 100%;
     text-align: center;
@@ -838,7 +847,7 @@ button:hover {
 }
 
 /* Anton */
-=======
+
 /*complete*/
 .bodycomplete {
   background-image: url(../pics/completepic.svg);
@@ -855,7 +864,12 @@ button:hover {
   color: white;
 }
 /*fotter*/
+<<<<<<< Updated upstream
 >>>>>>>310df7c7a625bb44ab6cce7172c01826771699bd footer {
+=======
+
+footer {
+>>>>>>> Stashed changes
   width: 100%;
   background-color: darkgray;
   margin: auto;
@@ -915,12 +929,6 @@ svg {
   background: #ffffff;
   transition: 0.2s;
 }
-
-/* svg{
-  margin: auto;
-  width: 100%;
-  padding: 100%;
-} */
 
 #iconIG {
   -webkit-mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg==");
@@ -1035,4 +1043,38 @@ button.standard {
 button.standard:hover {
   color: #fff;
   transition: 0.2s;
+}
+
+/*All media screen responsive*/
+
+/*index responsive*/
+
+@media screen and (max-width: 500px) {
+  .recomended {
+    width: 82%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+  }
+
+  .cathead2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .recomendedcat {
+    height: 150px;
+    width: 150px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recomendedvinyl {
+    height: 150px;
+    width: 150px;
+  }
 }
