@@ -734,8 +734,7 @@ footer {
   padding: 2rem 0rem 2rem 0rem;
 }
 
-
-h2.footerLinks{
+h2.footerLinks {
   font-size: 2rem;
 }
 /*Rock Footer*/
@@ -769,15 +768,13 @@ a.footerLinks {
 a.footerLinks:hover {
   color: red;
   transition: 0.2s;
-
-  
 }
 
-div.footerSocials{
+div.footerSocials {
   display: flex;
   flex-direction: row;
   margin: auto;
-  width:7rem;
+  width: 7rem;
   height: 100%;
 }
 
@@ -790,7 +787,7 @@ div.footerSocials{
 }
 
 svg {
-  width: max-content;
+  width: 36px;
   object-fit: fill;
 }
 
@@ -811,11 +808,6 @@ svg {
   /* margin: auto; */
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-}
-
-svg {
-  width: max-content;
-  object-fit: fill;
 }
 
 .icon:hover {
@@ -1039,7 +1031,6 @@ button.standard:hover {
     background-image: url(../pics/logo\ with\ text\ kopia.svg);
   }
 
-
   .twoicons {
     height: 100%;
     margin-left: 14%;
@@ -1108,7 +1099,7 @@ button.standard:hover {
   }
   .nav-menu {
     position: fixed;
-    right: -100%;
+    /* right: -100%; */
     top: 70px;
     gap: 0;
     flex-direction: column;
@@ -1153,47 +1144,45 @@ button.standard:hover {
     height: 100%;
   }
 
-  .icon{
+  .icon {
     margin-bottom: 11%;
   }
 
-
-  div.footerSocials{
+  div.footerSocials {
     display: flex;
     flex-direction: column !important;
     width: 60% !important;
     height: 50% !important;
     width: 1rem;
   }
-  }
+}
 
-  .icon:hover {
-    background: red;
-    transition: 0.2s;
-  }
-  .iconNav:hover {
-    background: #ffffff;
-    transition: 0.2s;
-  }
+.icon:hover {
+  background: red;
+  transition: 0.2s;
+}
+.iconNav:hover {
+  background: #ffffff;
+  transition: 0.2s;
+}
 
-  .twoicons {
-    height: 100%;
-    margin-left: 14%;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-  }
+.twoicons {
+  height: 100%;
+  margin-left: 14%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
 
-
-footer{
+footer {
   padding: 2vw;
 }
 
-.innerfooter{
-width: 100%;
-padding: 0;
-margin: auto;
-grid-template-rows: 1fr 1fr .2fr;
+.innerfooter {
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  grid-template-rows: 1fr 1fr 0.2fr;
 }
 
 /*footer responsive*/
