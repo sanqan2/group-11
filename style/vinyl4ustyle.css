@@ -568,6 +568,20 @@ span.price {
   height: 88px;
   margin: 0 auto;
   background-image: url(../pics/logo\ with\ text\ kopia.svg);
+  /*<!-- The following 4 lines of code was adapted from https://codepen.io/teerapuch/pen/vLJXeR 01-12-2023 --!>*/
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/*<!-- The following 8 lines of code was adapted from https://codepen.io/teerapuch/pen/vLJXeR 01-12-2023 --!>*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*about*/
