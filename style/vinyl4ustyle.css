@@ -288,6 +288,47 @@ p.Catigori {
 }
 
 /*Rock*/
+/*New Code for Rock Pages*/
+.Rockcatall {
+  width: 90%;
+  height: 16rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /*grid-template-columns: repeat(auto-fill, minmax(16rem, 16rem));*/
+  gap: 15px;
+  row-gap: 50px;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.RockGallery img {
+  width: 16rem;
+  height: 16rem;
+  border: solid white 1px;
+}
+.AlbumArtistPrice {
+  box-sizing: border-box;
+  width: 16.1rem;
+  margin-top: 1vw;
+  background-color: rgb(167, 13, 13);
+  font-family: jockey;
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  text-align: left;
+  border: solid white 1px;
+  padding: 2px;
+}
+/*Animation/Hover effect Rockpages */
+.RockGallery:hover {
+  transform: scale(1.05);
+}
+.RockGallery {
+  width: 16rem;
+  transition: transform 0.3s ease-in-out;
+}
+/* "Old Code"
 .rockcatall {
   width: 90%;
   height: auto;
@@ -297,11 +338,11 @@ p.Catigori {
   margin: 0 auto;
   margin-top: 12px;
   gap: 15px;
-  row-gap: 150px; /*fix rowgap */
-}
-.rockcat {
+  row-gap: 150px;
+}*/
+/*.rockcat {
   width: 100%;
-  height: 261px;
+  height: 16rem;
   background-color: rgb(167, 13, 13);
   text-align: center;
   font-size: 1rem;
@@ -311,13 +352,13 @@ p.Catigori {
   border: solid white 2px;
   box-shadow: #040101 0px 2px;
 }
-/*Album cover images and Album/Artist description and (price not done yet)*/
-/*Best of ACDC*/
+*/
+/* Classes use in index,acdc1 file */
 .Albumtext {
   width: 100%;
   height: 6vw;
   margin-top: 1vw;
-  /* margin-left: -1.5px; */
+
   background-color: rgb(167, 13, 13);
   font-family: jockey;
   font-size: 1.2rem;
@@ -337,7 +378,7 @@ p.Catigori {
   font-size: 1.2rem;
   color: #ffffff;
 }
-/*Artist albums images*/
+
 .AlbumImage {
   width: 100%;
   height: 100%;
@@ -696,6 +737,14 @@ footer {
 
 h2.footerLinks{
   font-size: 2rem;
+}
+/*Rock Footer*/
+.RockFooter {
+  width: 100%;
+  background-color: darkgray;
+  margin: auto;
+  padding: 2rem 10rem 2rem 10rem;
+  margin-top: 70%;
 }
 
 section.innerFooter {
@@ -1281,7 +1330,6 @@ grid-template-rows: 1fr 1fr .2fr;
     height: 250px;
   }
 }
-
 
 @media screen and (max-width: 820px) {
   .story {
