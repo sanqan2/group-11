@@ -60,17 +60,19 @@ li {
   padding: 0 24px;
 }
 
-.groupL{
+.groupL {
   display: flex;
-flex-direction: row;
-margin: auto;
-margin-left: 0px;}
-.groupR{
+  flex-direction: row;
+  margin: auto;
+  margin-left: 0px;
+}
+.groupR {
   display: flex;
-flex-direction: row;
-width: 100%;
-margin: auto;
-margin-right: 0px;}
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  margin-right: 0px;
+}
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -146,7 +148,6 @@ margin-right: 0px;}
 }
 
 svg {
-  width: max-content;
   object-fit: fill;
 }
 
@@ -477,7 +478,6 @@ a.footerLinks:hover {
   }
 
   svg {
-    width: max-content;
     object-fit: fill;
   }
 
@@ -602,7 +602,6 @@ a.footerLinks:hover {
   }
 
   svg {
-    width: max-content;
     object-fit: fill;
   }
 
@@ -895,7 +894,6 @@ a.footerLinks:hover {
   }
 
   svg {
-    width: max-content;
     object-fit: fill;
   }
 
