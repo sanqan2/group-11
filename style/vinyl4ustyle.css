@@ -294,8 +294,8 @@ p.Catigori {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /*grid-template-columns: repeat(auto-fill, minmax(16rem, 16rem));*/
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 15rem));
+  gap: 20px;
   row-gap: 50px;
   justify-content: center;
   padding: 20px;
@@ -303,13 +303,13 @@ p.Catigori {
 }
 
 .RockGallery img {
-  width: 16rem;
-  height: 16rem;
+  width: 15rem;
+  height: 15rem;
   border: solid white 1px;
 }
 .AlbumArtistPrice {
   box-sizing: border-box;
-  width: 16.1rem;
+  width: 15rem;
   margin-top: 1vw;
   background-color: rgb(167, 13, 13);
   font-family: jockey;
@@ -317,7 +317,7 @@ p.Catigori {
   color: #f4f4f4;
   text-align: left;
   border: solid white 1px;
-  padding: 2px;
+  padding: 4px;
 }
 /*Animation/Hover effect Rockpages */
 .RockGallery:hover {
