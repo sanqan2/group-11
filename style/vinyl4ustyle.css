@@ -906,7 +906,6 @@ p.cart {
   width: 3rem;
   height: 2rem;
   border: 1px solid rgb(72, 42, 45);
-  margin-top: 20px;
   margin-right: 0.2rem;
   font-size: 1rem;
   font-weight: 500;
@@ -940,9 +939,10 @@ input::-webkit-inner-spin-button {
   padding: 0;
 }
 
+
+
 h2.btnText {
   font-family: Jockey;
-  margin: 1rem;
   color: #ffffff;
   padding: 0.3rem 1rem 0.3rem 1rem;
 }
@@ -957,6 +957,7 @@ input.cartActionContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 p.price {
@@ -990,8 +991,8 @@ p.price {
 button.standard {
   padding: 0.3rem 1rem 0.3rem 1rem;
   color: #000;
-  font-size: 2vw;
-  margin-top: 20px;
+  font-size: 1.5rem;
+  margin: auto;
 }
 button.cartButton {
   padding: 0.3rem 1rem 0.3rem 1rem;
@@ -1444,23 +1445,22 @@ img.product, img.square {
   font-family: "Courier New", Courier, monospace;
 }
 .amountProduct {
-  margin:0;
-  width:22%;
+margin:0;
+  width:22vw;
   height: 15vw;
-  font-size: 9vw;
+  font-size: 11vw;
   font-weight: 700;
   text-align: right;
 }
 
 .cartButton{
   font-size: 9vw !important;
-  width:76%;
+  width:67vw;
   height: 15vw;
 margin:0;
 }
 
 .productButtonsContainer{
-  display: block;
   margin: auto;
   width: 100%;
 }
@@ -1499,5 +1499,13 @@ margin:0;
 
   textarea {
     height: 250px;
+
+   
+  }
+  .cartInfo{
+    width:90vw;
+  }
+  .cartProduct,.checkoutButtonContainer{
+    width:90vw;
   }
 }

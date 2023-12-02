@@ -52,28 +52,7 @@ li {
   align-items: center;
   padding: 0 24px;
 }
-.navbar1254 {
-  min-height: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-}
 
-.groupL {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  margin-left: 0px;
-}
-.groupR {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: auto;
-  margin-right: 0px;
-}
 .nav-menu {
   display: flex;
   justify-content: space-between;
