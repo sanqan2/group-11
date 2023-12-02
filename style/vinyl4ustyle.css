@@ -36,6 +36,7 @@ a {
   width: 100%;
 height: 50vw;
   border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
   
 }
 
@@ -407,7 +408,6 @@ p.Catigori {
   height: 100%;
   font-family: jockey;
   color: white;
-  border-left: 1px solid #fff;
 }
 
 img.square{
@@ -714,7 +714,6 @@ label {
 button {
   border: 1px solid rgb(72, 42, 45);
   background-color: white;
-  margin-top: 20px;
   font-family: jockey;
   font-size: 20px;
   font-weight: 500;
@@ -918,6 +917,20 @@ p.cart {
 .amount::placeholder {
   color: #000;
 }
+.amountProduct {
+  margin-left: .3vw;
+  width:5vw;
+  border: 1px solid rgb(72, 42, 45);
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: right;
+  padding: 0px;
+}
+
+.amountProduct::placeholder {
+  color: #000;
+}
 /* From here https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -960,6 +973,15 @@ p.price {
   display: flex;
   flex-direction: row-reverse;
 }
+.productButtonsContainer {
+  width: 100%;
+  margin: auto;
+  margin-right:5vw;
+  /* margin-top: 0%; */
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
 
 .left {
   margin-left: 0px;
@@ -968,9 +990,16 @@ p.price {
 button.standard {
   padding: 0.3rem 1rem 0.3rem 1rem;
   color: #000;
+  font-size: 2vw;
+  margin-top: 20px;
+}
+button.cartButton {
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  color: #000;
+  font-size: 2vw;
 }
 
-button.standard:hover {
+button.standard:hover, button.cartButton:hover {
   color: #fff;
   transition: 0.2s;
 }
@@ -1383,10 +1412,10 @@ footer {
 .vinylCover{
   height:100vw;
   width: 100%;
+  border-right: 0px;
 }
 .vinylInfo{
-  width: 100vw;
-  border-left: none;}
+  width: 100vw;}
   
 
 img.product, img.square {
@@ -1410,10 +1439,32 @@ img.product, img.square {
 .producttext4 {
   margin-top: 5vw;
   margin-left: 5vw;
-  margin-bottom: auto;
+  margin-bottom: 0;
   font-size: 3vw;
   font-family: "Courier New", Courier, monospace;
 }
+.amountProduct {
+  margin:0;
+  width:22%;
+  height: 15vw;
+  font-size: 9vw;
+  font-weight: 700;
+  text-align: right;
+}
+
+.cartButton{
+  font-size: 9vw !important;
+  width:76%;
+  height: 15vw;
+margin:0;
+}
+
+.productButtonsContainer{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
 
   .story {
     width: 100%;
