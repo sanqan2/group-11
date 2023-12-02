@@ -256,7 +256,6 @@ p.Catigori {
 .Catigori {
   font-family: jockey;
   font-size: 1rem;
-  
 }
 
 /*Vinyls*/
@@ -349,260 +348,6 @@ a.footerLinks:hover {
 #iconDelete {
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
-}
-/*heder responsive*/
-@media (max-width: 820px) {
-  .sitename {
-    color: white;
-    padding-top: 5px;
-    font-family: jockey;
-    font-size: 1.6rem;
-    margin-left: -4%;
-    width: 10px;
-  }
-  .siteplace {
-    font-family: jockey;
-    height: 100%;
-    width: 50px;
-    padding-top: 5px;
-    text-align: center;
-    font-size: 1.6rem;
-    margin-left: 30%;
-  }
-  .icon {
-    width: 1.8rem;
-    height: 1.8rem;
-  }
-  header {
-    background-color: red;
-  }
-  li {
-    list-style: none;
-  }
-  .navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-  }
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .name {
-    font-size: 2rem;
-  }
-  .name2 {
-    transition: 0, 7s ease;
-  }
-  .name2 :hover {
-    color: blue;
-  }
-  .menu {
-    cursor: pointer;
-    display: block;
-    margin-left: 3%;
-  }
-  .menu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu {
-    position: fixed;
-    right: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: white;
-    width: 40%;
-    font-family: jockey;
-    font-size: 1.2rem;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .name2 {
-    margin: 16px 0;
-  }
-  .nav-menu.active {
-    right: 0;
-  }
-  .bar {
-    display: block;
-    width: 34px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
-  }
-
-  .logo {
-    width: 66px;
-    height: 68px;
-    margin-top: 1px;
-    margin-left: 4px;
-    background-image: url(../pics/logo\ with\ text\ kopia.svg);
-  }
-  .icon,
-  .iconNav {
-    background: #000;
-    margin: auto;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-  }
-
-  svg {
-    object-fit: fill;
-  }
-
-  .icon:hover {
-    background: #bf431a;
-    transition: 0.2s;
-  }
-  .iconNav:hover {
-    background: #ffffff;
-    transition: 0.2s;
-  }
-
-  .twoicons {
-    height: 100%;
-    margin-left: 14%;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-  }
-}
-@media (max-width: 500px) {
-  .sitename {
-    display: none;
-  }
-  .siteplace {
-    font-family: jockey;
-    height: 100%;
-    width: 50px;
-    padding-top: 5px;
-    text-align: center;
-    font-size: 1.6rem;
-    margin-left: 26%;
-  }
-  .icon {
-    width: 1rem;
-    height: 1rem;
-  }
-  header {
-    background-color: red;
-  }
-  li {
-    list-style: none;
-  }
-  .navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-  }
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .name {
-    font-size: 2rem;
-  }
-  .name2 {
-    transition: 0, 7s ease;
-  }
-  .name2 :hover {
-    color: blue;
-  }
-  .menu {
-    cursor: pointer;
-    display: block;
-    margin-left: 3%;
-  }
-  .menu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu {
-    position: fixed;
-    right: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: white;
-    width: 40%;
-    font-family: jockey;
-    font-size: 1.2rem;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .name2 {
-    margin: 16px 0;
-  }
-  .nav-menu.active {
-    right: 0;
-  }
-  .bar {
-    display: block;
-    width: 34px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
-  }
-
-  .logo {
-    width: 66px;
-    height: 68px;
-    margin-top: 1px;
-    margin-left: 4px;
-    background-image: url(../pics/logo\ with\ text\ kopia.svg);
-  }
-  .icon,
-  .iconNav {
-    background: #000;
-    margin: auto;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-  }
-
-  svg {
-    object-fit: fill;
-  }
-
-  .icon:hover {
-    background: #bf431a;
-    transition: 0.2s;
-  }
-  .iconNav:hover {
-    background: #ffffff;
-    transition: 0.2s;
-  }
-
-  .twoicons {
-    height: 100%;
-    margin-left: 14%;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-  }
 }
 
 /*index responsive*/
@@ -758,7 +503,6 @@ a.footerLinks:hover {
     border: solid white 1px;
     box-shadow: #040101 0px 2px;
     margin: auto;
-    
   }
 
   .catTextWrapper {
@@ -796,30 +540,23 @@ a.footerLinks:hover {
     cursor: pointer;
     border: solid white 1px;
     box-shadow: #040101 0px 2px;
-    
-    margin-bottom: 70px;
 
+    margin-bottom: 70px;
   }
 
   .Albumtext {
-  justify-content: center;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
-  display: flex;
-  gap: 10px;
-  justify-content: last baseline;
-  
-  
+    justify-content: center;
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 10px;
+    justify-content: last baseline;
   }
 
   .Artisttext {
     font-size: 1rem;
-    position:  relative;
+    position: relative;
     justify-content: center;
-  }
-
-  .PriceText {
-  
   }
 
   p.Catigori {
