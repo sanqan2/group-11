@@ -153,100 +153,6 @@ li {
   gap: 16px;
 }
 
-/*Index page*/
-.heroelement {
-  width: 82%;
-  height: 290px;
-  margin: 0 auto;
-  font-size: 2rem;
-  font-family: jockey;
-  color: white;
-  background-image: url("../pics/vinyl.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.herotxt {
-  margin: 0 auto;
-  padding-top: 100px;
-  width: 40%;
-  color: rgb(255, 255, 255);
-}
-.recomended {
-  width: 82%;
-  height: auto;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 1vw;
-}
-
-.recomendedcat {
-  width: 100%;
-  height: 15vw;
-  background-color: rgb(167, 13, 13);
-  text-align: center;
-  font-size: 1rem;
-  color: white;
-  box-shadow: #0f191d 2px 2px;
-  cursor: pointer;
-  border: solid white 1px;
-  box-shadow: #040101 0px 2px;
-  margin: auto;
-}
-
-.catTextWrapper {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.recomendedvinyl {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  box-shadow: #0f191d 2px 2px;
-  cursor: pointer;
-}
-
-.cathead2 {
-  color: white;
-  font-size: 1.5rem;
-  font-family: jockey;
-  margin-left: 9%;
-  margin-top: 14px;
-}
-
-.indexvinyls {
-  width: 15vw;
-  height: 15vw;
-  object-fit: contain;
-  background-color: rgb(167, 13, 13);
-  text-align: center;
-  color: white;
-  cursor: pointer;
-  border: solid white 1px;
-  box-shadow: #040101 0px 2px;
-}
-
-p.Catigori {
-  padding-top: 6.8vw;
-  height: 15vw;
-  width: 15vw;
-  text-align: center;
-  margin: auto;
-}
-
-.Catigori {
-  font-family: jockey;
-  font-size: 1rem;
-}
-
 /*search page*/
 
 .searchbox {
@@ -307,7 +213,49 @@ p.Catigori {
   margin-left: 15%;
   margin-top: 20px;
 }
+.recomendedcat {
+  width: 100%;
+  height: 15vw;
+  background-color: rgb(167, 13, 13);
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  box-shadow: #0f191d 2px 2px;
+  cursor: pointer;
+  border: solid white 1px;
+  box-shadow: #040101 0px 2px;
+  margin: auto;
+}
+.recomended {
+  width: 82%;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1vw;
+}
 
+.catTextWrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+p.Catigori {
+  padding-top: 6.8vw;
+  height: 15vw;
+  width: 15vw;
+  text-align: center;
+  margin: auto;
+}
+
+.Catigori {
+  font-family: jockey;
+  font-size: 1rem;
+}
 /*Rock*/
 /*New Code for Rock Pages*/
 .Rockcatall {
@@ -419,14 +367,16 @@ p.Catigori {
   height: 400px;
   display: flex;
   flex-direction: row;
+
 }
 .picdiv {
   width: 40%;
-  margin-left: 5%;
+  margin-left: 9%;
   margin-top: 2%;
   background-color: white;
   opacity: 60%;
   border: solid 2px white;
+
 }
 .bigpic {
   width: 70%;
@@ -434,6 +384,9 @@ p.Catigori {
   margin-left: 15%;
   margin-top: 16px;
   background-image: url("../pics/bestofacdc.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 .Productpic {
   margin: 0 auto;
@@ -442,6 +395,7 @@ p.Catigori {
   width: 100%;
   font-family: jockey;
   color: white;
+  position: relative;
 }
 .vinylInfo {
   width: 100%;
@@ -513,6 +467,9 @@ h3 {
 .col-50,
 .col-75 {
   padding: 0 16px;
+  font-family: jockey;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
 }
 
 .container {
@@ -1102,7 +1059,7 @@ button.standard:hover {
     width: 66px;
     height: 68px;
     margin-top: 1px;
-    margin-left: 4px;
+    margin-left: 10px;
     background-image: url(../pics/logo\ with\ text\ kopia.svg);
   }
 
@@ -1118,6 +1075,7 @@ button.standard:hover {
   .sitename {
     display: none;
   }
+
   .siteplace {
     font-family: jockey;
     height: 100%;
