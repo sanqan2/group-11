@@ -345,14 +345,16 @@ p.Catigori {
   height: 400px;
   display: flex;
   flex-direction: row;
+
 }
 .picdiv {
   width: 40%;
-  margin-left: 5%;
+  margin-left: 9%;
   margin-top: 2%;
   background-color: white;
   opacity: 60%;
   border: solid 2px white;
+
 }
 .bigpic {
   width: 70%;
@@ -360,6 +362,9 @@ p.Catigori {
   margin-left: 15%;
   margin-top: 16px;
   background-image: url("../pics/bestofacdc.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 .Productpic {
   margin: 0 auto;
@@ -369,6 +374,7 @@ p.Catigori {
   height: 400px;
   font-family: jockey;
   color: white;
+  position: relative;
 }
 .vinylinfo {
   margin-left: 25%;
@@ -435,6 +441,9 @@ h3 {
 .col-50,
 .col-75 {
   padding: 0 16px;
+  font-family: jockey;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
 }
 
 .container {
@@ -993,7 +1002,7 @@ button.standard:hover {
     width: 66px;
     height: 68px;
     margin-top: 1px;
-    margin-left: 4px;
+    margin-left: 10px;
     background-image: url(../pics/logo\ with\ text\ kopia.svg);
   }
 
@@ -1009,6 +1018,7 @@ button.standard:hover {
   .sitename {
     display: none;
   }
+
   .siteplace {
     font-family: jockey;
     height: 100%;

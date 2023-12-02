@@ -33,6 +33,7 @@ a {
   text-align: center;
   font-size: 1.6rem;
   margin-left: 34%;
+
 }
 .icon {
   width: 1.8rem;
@@ -262,6 +263,7 @@ svg {
   cursor: pointer;
   border: solid white 1px;
   box-shadow: #040101 0px 2px;
+  margin: auto;
 }
 
 p.Catigori {
@@ -275,6 +277,7 @@ p.Catigori {
 .Catigori {
   font-family: jockey;
   font-size: 1rem;
+  
 }
 
 /*Vinyls*/
@@ -776,6 +779,7 @@ a.footerLinks:hover {
     border: solid white 1px;
     box-shadow: #040101 0px 2px;
     margin: auto;
+    
   }
 
   .catTextWrapper {
@@ -804,8 +808,8 @@ a.footerLinks:hover {
   }
 
   .indexvinyls {
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
     object-fit: contain;
     background-color: rgb(167, 13, 13);
     text-align: center;
@@ -813,6 +817,30 @@ a.footerLinks:hover {
     cursor: pointer;
     border: solid white 1px;
     box-shadow: #040101 0px 2px;
+    
+    margin-bottom: 70px;
+
+  }
+
+  .Albumtext {
+  justify-content: center;
+  padding-bottom: 40px;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 10px;
+  justify-content: last baseline;
+  
+  
+  }
+
+  .Artisttext {
+    font-size: 1rem;
+    position:  relative;
+    justify-content: center;
+  }
+
+  .PriceText {
+  
   }
 
   p.Catigori {
