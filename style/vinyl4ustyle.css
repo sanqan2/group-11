@@ -214,36 +214,6 @@ p.Catigori {
 }
 */
 /* Classes use in index,acdc1 file */
-.Albumtext {
-  width: 100%;
-  height: 6vw;
-  margin-top: 1vw;
-
-  background-color: rgb(167, 13, 13);
-  font-family: jockey;
-  font-size: 1.2rem;
-  padding: 2px 5px;
-  text-align: left;
-  border: solid white 1px;
-}
-.Artisttext {
-  font-family: jockey;
-  margin-top: -0.5vw;
-  font-size: 1.2rem;
-  color: #b3b3b3;
-}
-.PriceText {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: -5%;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-.AlbumImage {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
 
 .cattext {
   width: 90%;
@@ -621,126 +591,6 @@ button:hover {
   transition: 0.1s;
 }
 
-/*footer*/
-footer {
-  margin: auto;
-  margin-bottom: 0%;
-  margin-top: 16px;
-  width: 100%;
-  background-color: darkgray;
-  /* margin: auto; */
-  padding: 2rem 0rem 2rem 0rem;
-}
-
-h2.footerLinks {
-  font-size: 2rem;
-}
-/*Rock Footer*/
-.RockFooter {
-  /*width: 100%;
-  background-color: darkgray;
-  margin: auto;
-  padding: 2rem 10rem 2rem 10rem;
-  margin-top: 70%;*/
-  margin: auto;
-  margin-bottom: 0%;
-  margin-top: auto;
-  width: 100%;
-  background-color: darkgray;
-  /* margin: auto; */
-  padding: 2rem 0rem 2rem 0rem;
-}
-
-section.innerFooter {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  gap: 2vw;
-  width: 82%;
-  max-width: 100%;
-  margin: auto;
-}
-
-div.footerLinks {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0rem 1rem 0rem;
-}
-
-a.footerLinks {
-  color: #000;
-  text-decoration: none;
-}
-a.footerLinks:hover {
-  color: red;
-  transition: 0.2s;
-}
-
-div.footerSocials {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 7rem;
-  height: 100%;
-}
-
-.icon,
-.iconNav {
-  background: #000;
-  margin: auto;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-svg {
-  width: 36px;
-  object-fit: fill;
-}
-
-.icon:hover {
-  background: rgb(255, 64, 0);
-  transition: 0.2s;
-}
-.iconNav:hover {
-  background: #ffffff;
-  transition: 0.2s;
-}
-
-/* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
-.icon,
-.iconNav {
-  background: #000;
-  /* margin-right: 0.8rem; */
-  /* margin: auto; */
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-.icon:hover {
-  background: red;
-  transition: 0.2s;
-}
-.iconNav:hover {
-  background: #ffffff;
-  transition: 0.2s;
-}
-
-#iconIG {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0gOCAzIEMgNS4yMzkgMyAzIDUuMjM5IDMgOCBMIDMgMTYgQyAzIDE4Ljc2MSA1LjIzOSAyMSA4IDIxIEwgMTYgMjEgQyAxOC43NjEgMjEgMjEgMTguNzYxIDIxIDE2IEwgMjEgOCBDIDIxIDUuMjM5IDE4Ljc2MSAzIDE2IDMgTCA4IDMgeiBNIDE4IDUgQyAxOC41NTIgNSAxOSA1LjQ0OCAxOSA2IEMgMTkgNi41NTIgMTguNTUyIDcgMTggNyBDIDE3LjQ0OCA3IDE3IDYuNTUyIDE3IDYgQyAxNyA1LjQ0OCAxNy40NDggNSAxOCA1IHogTSAxMiA3IEMgMTQuNzYxIDcgMTcgOS4yMzkgMTcgMTIgQyAxNyAxNC43NjEgMTQuNzYxIDE3IDEyIDE3IEMgOS4yMzkgMTcgNyAxNC43NjEgNyAxMiBDIDcgOS4yMzkgOS4yMzkgNyAxMiA3IHogTSAxMiA5IEEgMyAzIDAgMCAwIDkgMTIgQSAzIDMgMCAwIDAgMTIgMTUgQSAzIDMgMCAwIDAgMTUgMTIgQSAzIDMgMCAwIDAgMTIgOSB6Ii8+PC9zdmc+");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0gOCAzIEMgNS4yMzkgMyAzIDUuMjM5IDMgOCBMIDMgMTYgQyAzIDE4Ljc2MSA1LjIzOSAyMSA4IDIxIEwgMTYgMjEgQyAxOC43NjEgMjEgMjEgMTguNzYxIDIxIDE2IEwgMjEgOCBDIDIxIDUuMjM5IDE4Ljc2MSAzIDE2IDMgTCA4IDMgeiBNIDE4IDUgQyAxOC41NTIgNSAxOSA1LjQ0OCAxOSA2IEMgMTkgNi41NTIgMTguNTUyIDcgMTggNyBDIDE3LjQ0OCA3IDE3IDYuNTUyIDE3IDYgQyAxNyA1LjQ0OCAxNy40NDggNSAxOCA1IHogTSAxMiA3IEMgMTQuNzYxIDcgMTcgOS4yMzkgMTcgMTIgQyAxNyAxNC43NjEgMTQuNzYxIDE3IDEyIDE3IEMgOS4yMzkgMTcgNyAxNC43NjEgNyAxMiBDIDcgOS4yMzkgOS4yMzkgNyAxMiA3IHogTSAxMiA5IEEgMyAzIDAgMCAwIDkgMTIgQSAzIDMgMCAwIDAgMTIgMTUgQSAzIDMgMCAwIDAgMTUgMTIgQSAzIDMgMCAwIDAgMTIgOSB6Ii8+PC9zdmc+");
-}
-#iconFB {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0xNywzSDdDNC43OTEsMywzLDQuNzkxLDMsN3YxMGMwLDIuMjA5LDEuNzkxLDQsNCw0aDUuNjIxdi02Ljk2MWgtMi4zNDN2LTIuNzI1aDIuMzQzVjkuMzA5IGMwLTIuMzI0LDEuNDIxLTMuNTkxLDMuNDk1LTMuNTkxYzAuNjk5LTAuMDAyLDEuMzk3LDAuMDM0LDIuMDkyLDAuMTA1djIuNDNoLTEuNDI4Yy0xLjEzLDAtMS4zNSwwLjUzNC0xLjM1LDEuMzIydjEuNzM1aDIuNyBsLTAuMzUxLDIuNzI1aC0yLjM2NVYyMUgxN2MyLjIwOSwwLDQtMS43OTEsNC00VjdDMjEsNC43OTEsMTkuMjA5LDMsMTcsM3oiLz48L3N2Zz4=");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0xNywzSDdDNC43OTEsMywzLDQuNzkxLDMsN3YxMGMwLDIuMjA5LDEuNzkxLDQsNCw0aDUuNjIxdi02Ljk2MWgtMi4zNDN2LTIuNzI1aDIuMzQzVjkuMzA5IGMwLTIuMzI0LDEuNDIxLTMuNTkxLDMuNDk1LTMuNTkxYzAuNjk5LTAuMDAyLDEuMzk3LDAuMDM0LDIuMDkyLDAuMTA1djIuNDNoLTEuNDI4Yy0xLjEzLDAtMS4zNSwwLjUzNC0xLjM1LDEuMzIydjEuNzM1aDIuNyBsLTAuMzUxLDIuNzI1aC0yLjM2NVYyMUgxN2MyLjIwOSwwLDQtMS43OTEsNC00VjdDMjEsNC43OTEsMTkuMjA5LDMsMTcsM3oiLz48L3N2Zz4=");
-}
-#iconSpotify {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0xMiwyQzYuNSwyLDIsNi41LDIsMTJzNC41LDEwLDEwLDEwczEwLTQuNSwxMC0xMFMxNy41LDIsMTIsMnogTTE2LjA1NywxNi40MDZjLTAuMTg4LDAtMC4yODItMC4wOTQtMC40Ny0wLjE4OCBjLTEuNDExLTAuODQ3LTMuMTk4LTEuMzE3LTUuMDc5LTEuMzE3Yy0xLjAzNSwwLTIuMTYzLDAuMTg4LTMuMTA0LDAuMzc2Yy0wLjE4OCwwLTAuMzc2LDAuMDk0LTAuNDcsMC4wOTQgYy0wLjM3NiwwLTAuNjU4LTAuMjgyLTAuNjU4LTAuNjU4YzAtMC4zNzYsMC4xODgtMC42NTgsMC41NjQtMC42NThjMS4yMjMtMC4yODIsMi40NDYtMC40NywzLjc2My0wLjQ3IGMyLjE2MywwLDQuMTM5LDAuNTY0LDUuODMyLDEuNTA1YzAuMTg4LDAuMTg4LDAuMzc2LDAuMjgyLDAuMzc2LDAuNjU4QzE2LjYyMSwxNi4yMTgsMTYuMzM5LDE2LjQwNiwxNi4wNTcsMTYuNDA2eiBNMTcuMDkxLDEzLjc3MyBjLTAuMTg4LDAtMC4zNzYtMC4wOTQtMC41NjQtMC4xODhjLTEuNTk5LTEuMDM1LTMuODU3LTEuNTk5LTYuMzAyLTEuNTk5Yy0xLjIyMywwLTIuMzUyLDAuMTg4LTMuMTk4LDAuMzc2IGMtMC4xODgsMC4wOTQtMC4yODIsMC4wOTQtMC40NywwLjA5NGMtMC40NywwLTAuNzUzLTAuMzc2LTAuNzUzLTAuNzUzYzAtMC40NywwLjE4OC0wLjY1OCwwLjY1OC0wLjg0NyBjMS4xMjktMC4yODIsMi4yNTgtMC41NjQsMy44NTctMC41NjRjMi42MzQsMCw1LjA3OSwwLjY1OCw3LjE0OSwxLjg4MWMwLjI4MiwwLjE4OCwwLjQ3LDAuNDcsMC40NywwLjc1MyBDMTcuODQ0LDEzLjM5NiwxNy41NjIsMTMuNzczLDE3LjA5MSwxMy43NzN6IE0xOC4zMTQsMTAuNzYyYy0wLjE4OCwwLTAuMjgyLTAuMDk0LTAuNTY0LTAuMTg4IGMtMS44ODEtMS4wMzUtNC42MDktMS42OTMtNy4yNDMtMS42OTNjLTEuMzE3LDAtMi43MjgsMC4xODgtMy45NTEsMC40N2MtMC4xODgsMC0wLjI4MiwwLjA5NC0wLjU2NCwwLjA5NCBDNS40MjgsOS41NCw1LjA1MSw5LjA2OSw1LjA1MSw4LjUwNWMwLTAuNTY0LDAuMjgyLTAuODQ3LDAuNjU4LTAuOTQxQzcuMjE1LDcuMTg4LDguODE0LDcsMTAuNTA3LDcgYzIuOTE2LDAsNS45MjYsMC42NTgsOC4yNzgsMS44ODFjMC4yODIsMC4xODgsMC41NjQsMC40NywwLjU2NCwwLjk0MUMxOS4yNTUsMTAuMzg2LDE4Ljg3OCwxMC43NjIsMTguMzE0LDEwLjc2MnoiLz48L3N2Zz4=");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0xMiwyQzYuNSwyLDIsNi41LDIsMTJzNC41LDEwLDEwLDEwczEwLTQuNSwxMC0xMFMxNy41LDIsMTIsMnogTTE2LjA1NywxNi40MDZjLTAuMTg4LDAtMC4yODItMC4wOTQtMC40Ny0wLjE4OCBjLTEuNDExLTAuODQ3LTMuMTk4LTEuMzE3LTUuMDc5LTEuMzE3Yy0xLjAzNSwwLTIuMTYzLDAuMTg4LTMuMTA0LDAuMzc2Yy0wLjE4OCwwLTAuMzc2LDAuMDk0LTAuNDcsMC4wOTQgYy0wLjM3NiwwLTAuNjU4LTAuMjgyLTAuNjU4LTAuNjU4YzAtMC4zNzYsMC4xODgtMC42NTgsMC41NjQtMC42NThjMS4yMjMtMC4yODIsMi40NDYtMC40NywzLjc2My0wLjQ3IGMyLjE2MywwLDQuMTM5LDAuNTY0LDUuODMyLDEuNTA1YzAuMTg4LDAuMTg4LDAuMzc2LDAuMjgyLDAuMzc2LDAuNjU4QzE2LjYyMSwxNi4yMTgsMTYuMzM5LDE2LjQwNiwxNi4wNTcsMTYuNDA2eiBNMTcuMDkxLDEzLjc3MyBjLTAuMTg4LDAtMC4zNzYtMC4wOTQtMC41NjQtMC4xODhjLTEuNTk5LTEuMDM1LTMuODU3LTEuNTk5LTYuMzAyLTEuNTk5Yy0xLjIyMywwLTIuMzUyLDAuMTg4LTMuMTk4LDAuMzc2IGMtMC4xODgsMC4wOTQtMC4yODIsMC4wOTQtMC40NywwLjA5NGMtMC40NywwLTAuNzUzLTAuMzc2LTAuNzUzLTAuNzUzYzAtMC40NywwLjE4OC0wLjY1OCwwLjY1OC0wLjg0NyBjMS4xMjktMC4yODIsMi4yNTgtMC41NjQsMy44NTctMC41NjRjMi42MzQsMCw1LjA3OSwwLjY1OCw3LjE0OSwxLjg4MWMwLjI4MiwwLjE4OCwwLjQ3LDAuNDcsMC40NywwLjc1MyBDMTcuODQ0LDEzLjM5NiwxNy41NjIsMTMuNzczLDE3LjA5MSwxMy43NzN6IE0xOC4zMTQsMTAuNzYyYy0wLjE4OCwwLTAuMjgyLTAuMDk0LTAuNTY0LTAuMTg4IGMtMS44ODEtMS4wMzUtNC42MDktMS42OTMtNy4yNDMtMS42OTNjLTEuMzE3LDAtMi43MjgsMC4xODgtMy45NTEsMC40N2MtMC4xODgsMC0wLjI4MiwwLjA5NC0wLjU2NCwwLjA5NCBDNS40MjgsOS41NCw1LjA1MSw5LjA2OSw1LjA1MSw4LjUwNWMwLTAuNTY0LDAuMjgyLTAuODQ3LDAuNjU4LTAuOTQxQzcuMjE1LDcuMTg4LDguODE0LDcsMTAuNTA3LDcgYzIuOTE2LDAsNS45MjYsMC42NTgsOC4yNzgsMS44ODFjMC4yODIsMC4xODgsMC41NjQsMC40NywwLjU2NCwwLjk0MUMxOS4yNTUsMTAuMzg2LDE4Ljg3OCwxMC43NjIsMTguMzE0LDEwLjc2MnoiLz48L3N2Zz4=");
-}
-#iconDelete {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
-}
-
 /* Cart */
 img.cart {
   object-fit: contain;
@@ -895,270 +745,264 @@ button.cartButton:hover {
 }
 
 /*All media screen responsive*/
-/*header responsive*/
-/*heder responsive*/
 
-@media (max-width: 820px) {
-  /*footer responsive*/
-
-  /* Pay responsiveop */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
-    }
-    .col-25 {
-      margin-bottom: 20px;
-    }
+/* Pay responsiveop */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
   }
-  /*Vinyls responsive*/
-  @media (max-width: 800px) {
-    .firstdiv {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      flex-direction: row;
-    }
-    .picdiv {
-      width: 40%;
-      margin-left: 5%;
-      margin-top: 2%;
-      background-color: white;
-      opacity: 60%;
-      border: solid 2px white;
-    }
-    .bigpic {
-      width: 70%;
-      height: 70%;
-      margin-left: 15%;
-      margin-top: 16px;
-      background-image: url("../pics/bestofacdc.jpg");
-    }
-    .Productpic {
-      margin: 0 auto;
-    }
-    .infobox {
-      width: 55%;
-      height: 400px;
-      font-family: jockey;
-      color: white;
-    }
-    .vinylinfo {
-      margin-left: 25%;
-      font-size: 2rem;
-      border-bottom: 1px solid #fff;
-      height: 100%;
-    }
-    .vinylinfo2 {
-      margin-left: 25%;
-      font-size: 1.5rem;
-    }
-    .vinylinfo3 {
-      margin-top: 12px;
-      margin-left: 25%;
-      font-size: 1rem;
-    }
-    .vinylinfo4 {
-      margin-top: 12px;
-      margin-left: 25%;
-      font-size: 0.4rem;
-      font-family: "Courier New", Courier, monospace;
-    }
-    .recomended {
-      width: 82%;
-      height: auto;
-      margin: auto;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 1vw;
-    }
-    .indexvinyls {
-      width: 30vw;
-      height: 30vw;
-      object-fit: contain;
-      background-color: rgb(167, 13, 13);
-      text-align: center;
-      color: white;
-      cursor: pointer;
-      border: solid white 1px;
-      box-shadow: #040101 0px 2px;
-    }
-
-    .addtocartdiv {
-      width: 20%;
-      height: 50px;
-      padding-top: 1%;
-      background-color: red;
-      color: white;
-      text-align: center;
-      font-family: jockey;
-      margin-left: 60%;
-    }
+  .col-25 {
+    margin-bottom: 20px;
   }
-  /*About responsive*/
-
-  @media screen and (max-width: 1200px) {
-    .story {
-      width: 80%;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .storytext p {
-      width: 60%;
-      font-size: 17px;
-    }
-
-    form {
-      width: 60%;
-    }
-
-    .inputgroup {
-      padding-right: 10px;
-    }
-
-    .contactus {
-      width: 100%;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .conmail {
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    textarea {
-      height: 250px;
-    }
+}
+/*Vinyls responsive*/
+@media (max-width: 800px) {
+  .firstdiv {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
   }
-  @media screen and (min-width: 1439px) {
+  .picdiv {
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 2%;
+    background-color: white;
+    opacity: 60%;
+    border: solid 2px white;
+  }
+  .bigpic {
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 16px;
+    background-image: url("../pics/bestofacdc.jpg");
+  }
+  .Productpic {
+    margin: 0 auto;
+  }
+  .infobox {
+    width: 55%;
+    height: 400px;
+    font-family: jockey;
+    color: white;
+  }
+  .vinylinfo {
+    margin-left: 25%;
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+    height: 100%;
+  }
+  .vinylinfo2 {
+    margin-left: 25%;
+    font-size: 1.5rem;
+  }
+  .vinylinfo3 {
+    margin-top: 12px;
+    margin-left: 25%;
+    font-size: 1rem;
+  }
+  .vinylinfo4 {
+    margin-top: 12px;
+    margin-left: 25%;
+    font-size: 0.4rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .recomended {
+    width: 82%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+  }
+  .indexvinyls {
+    width: 30vw;
+    height: 30vw;
+    object-fit: contain;
+    background-color: rgb(167, 13, 13);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: solid white 1px;
+    box-shadow: #040101 0px 2px;
   }
 
-  @media screen and (max-width: 820px) {
-    .albumGrid {
-      flex-direction: column;
-    }
+  .addtocartdiv {
+    width: 20%;
+    height: 50px;
+    padding-top: 1%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-family: jockey;
+    margin-left: 60%;
+  }
+}
+/*About responsive*/
 
-    .vinylCover {
-      height: 100vw;
-      width: 100%;
-      border-right: 0px;
-    }
-    .vinylInfo {
-      width: 100vw;
-    }
+@media screen and (max-width: 1200px) {
+  .story {
+    width: 80%;
+    text-align: center;
+    margin-top: 60px;
+  }
 
-    img.product,
-    img.square {
-      width: 100%;
-      height: 100%;
-    }
+  .storytext p {
+    width: 60%;
+    font-size: 17px;
+  }
 
-    .producttext {
-      margin-left: 5vw;
-      font-size: 11vw;
-    }
-    .producttext2 {
-      margin-left: 5vw;
-      font-size: 5vw;
-    }
-    .producttext3 {
-      margin-top: 3vw;
-      margin-left: 5vw;
-      font-size: 4vw;
-    }
-    .producttext4 {
-      margin-top: 5vw;
-      margin-left: 5vw;
-      margin-bottom: 0;
-      font-size: 3vw;
-      font-family: "Courier New", Courier, monospace;
-    }
-    .amountProduct {
-      /* margin:0; */
-      width: 31vw;
-      height: 15vw;
-      font-size: 11vw;
-      font-weight: 700;
-      text-align: right;
-    }
+  form {
+    width: 60%;
+  }
 
-    .amountProduct::placeholder {
-      color: #000;
-    }
+  .inputgroup {
+    padding-right: 10px;
+  }
 
-    .cartButton {
-      font-size: 9vw !important;
-      width: 59vw;
-      height: 15vw;
-      /* margin:0; */
-    }
+  .contactus {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
 
-    .productButtonsContainer {
-      margin: auto;
-      margin-top: 5vw;
-      width: 90vw;
-      /* padding-left: 2.3vw; */
-    }
+  .conmail {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    .story {
-      width: 100%;
-      text-align: center;
-      margin-top: 60px;
-    }
+  textarea {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1439px) {
+}
 
-    .storytext p {
-      width: 70%;
-      font-size: 17px;
-    }
+@media screen and (max-width: 820px) {
+  .albumGrid {
+    flex-direction: column;
+  }
 
-    form {
-      width: 70%;
-    }
+  .vinylCover {
+    height: 100vw;
+    width: 100%;
+    border-right: 0px;
+  }
+  .vinylInfo {
+    width: 100vw;
+  }
 
-    .inputgroup {
-      padding-right: 10px;
-    }
+  img.product,
+  img.square {
+    width: 100%;
+    height: 100%;
+  }
 
-    .contactus {
-      width: 70%;
-      text-align: center;
-      margin-top: 60px;
-    }
+  .producttext {
+    margin-left: 5vw;
+    font-size: 11vw;
+  }
+  .producttext2 {
+    margin-left: 5vw;
+    font-size: 5vw;
+  }
+  .producttext3 {
+    margin-top: 3vw;
+    margin-left: 5vw;
+    font-size: 4vw;
+  }
+  .producttext4 {
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .amountProduct {
+    /* margin:0; */
+    width: 31vw;
+    height: 15vw;
+    font-size: 11vw;
+    font-weight: 700;
+    text-align: right;
+  }
 
-    .conmail {
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
-    }
+  .amountProduct::placeholder {
+    color: #000;
+  }
 
-    textarea {
-      height: 250px;
-    }
-    .cartInfo {
-      width: 90vw;
-    }
-    .cartProduct,
-    .checkoutButtonContainer {
-      width: 90vw;
-    }
+  .cartButton {
+    font-size: 9vw !important;
+    width: 59vw;
+    height: 15vw;
+    /* margin:0; */
+  }
 
-    /* cart */
-    .checkoutButtonContainer {
-      width: 100%;
-      display: flex;
-      flex-direction: column-reverse;
-      padding-top: 0.5vw;
-    }
-    button.standard {
-      width: 100%;
-    }
-    h2.btnText {
-      text-align: center;
-    }
+  .productButtonsContainer {
+    margin: auto;
+    margin-top: 5vw;
+    width: 90vw;
+    /* padding-left: 2.3vw; */
+  }
+
+  .story {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .storytext p {
+    width: 70%;
+    font-size: 17px;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  .inputgroup {
+    padding-right: 10px;
+  }
+
+  .contactus {
+    width: 70%;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .conmail {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  textarea {
+    height: 250px;
+  }
+  .cartInfo {
+    width: 90vw;
+  }
+  .cartProduct,
+  .checkoutButtonContainer {
+    width: 90vw;
+  }
+
+  /* cart */
+  .checkoutButtonContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0.5vw;
+  }
+  button.standard {
+    width: 100%;
+  }
+  h2.btnText {
+    text-align: center;
   }
 }

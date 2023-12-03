@@ -68,35 +68,12 @@ a {
   height: 100%;
 }
 
-.recomendedvinyl {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  box-shadow: #0f191d 2px 2px;
-  cursor: pointer;
-}
-
 .cathead2 {
   color: white;
   font-size: 1.5rem;
   font-family: jockey;
   margin-left: 9%;
   margin-top: 14px;
-}
-
-.indexvinyls {
-  width: 15vw;
-  height: 15vw;
-  object-fit: contain;
-  background-color: rgb(167, 13, 13);
-  text-align: center;
-  color: white;
-  cursor: pointer;
-  border: solid white 1px;
-  box-shadow: #040101 0px 2px;
-  margin: auto;
 }
 
 p.Catigori {
@@ -111,37 +88,6 @@ p.Catigori {
   font-family: jockey;
   font-size: 1rem;
 }
-
-/*Vinyls*/
-.Albumtext {
-  width: 100%;
-  height: 6.5vw;
-  margin-top: 1vw;
-  background-color: rgb(167, 13, 13);
-  font-family: jockey;
-  font-size: 1.4rem;
-  padding: 1px 5px;
-  text-align: left;
-  border: solid white 1px;
-}
-.Artisttext {
-  font-family: jockey;
-  font-size: 1.2rem;
-  color: #b3b3b3;
-  height: 0.6px;
-}
-.PriceText {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
-  color: #ffffff;
-}
-/*Artist albums images*/
-.AlbumImage {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-
 .cattext {
   width: 90%;
   margin: 0 auto;
@@ -150,78 +96,48 @@ p.Catigori {
   font-size: 2rem;
 }
 
-/*Footer*/
-footer {
-  width: 100%;
-  background-color: darkgray;
-  margin: auto;
-  padding: 2rem 10rem 2rem 10rem;
-  margin-top: 10%;
-}
-
-section.innerFooter {
+/* For vinyls*/
+.Rockcatall {
+  width: 83%;
+  height: auto;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  gap: 32px;
-  width: 82%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1vw;
+  justify-content: center;
   margin: auto;
+  overflow: hidden;
+  padding: 8px;
 }
-
-div.footerLinks {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+.RockGallery img {
+  width: 122%;
+  height: 12rem;
+  border: solid white 1px;
 }
-
-.footerSocials {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
+.AlbumArtistPrice {
+  box-sizing: border-box;
+  width: 122%;
+  margin-top: 1vw;
+  background-color: rgb(167, 13, 13);
+  font-family: jockey;
+  font-size: 0.8rem;
+  color: #f4f4f4;
+  text-align: left;
+  border: solid white 1px;
+  padding: 4px;
 }
-
-a.footerLinks {
-  color: #000;
-  text-decoration: none;
+/*Animation/Hover effect Rockpages */
+.RockGallery:hover {
+  transform: scale(1.05);
 }
-a.footerLinks:hover {
-  color: #bf431a;
-  transition: 0.2s;
-}
-#iconIG {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg==");
-  mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg==");
-}
-#iconFB {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTcsM0g3QzQuNzkxLDMsMyw0Ljc5MSwzLDd2MTBjMCwyLjIwOSwxLjc5MSw0LDQsNGg1LjYyMXYtNi45NjFoLTIuMzQzdi0yLjcyNWgyLjM0M1Y5LjMwOSBjMC0yLjMyNCwxLjQyMS0zLjU5MSwzLjQ5NS0zLjU5MWMwLjY5OS0wLjAwMiwxLjM5NywwLjAzNCwyLjA5MiwwLjEwNXYyLjQzaC0xLjQyOGMtMS4xMywwLTEuMzUsMC41MzQtMS4zNSwxLjMyMnYxLjczNWgyLjcgbC0wLjM1MSwyLjcyNWgtMi4zNjVWMjFIMTdjMi4yMDksMCw0LTEuNzkxLDQtNFY3QzIxLDQuNzkxLDE5LjIwOSwzLDE3LDN6Ii8+PC9zdmc+);
-  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTcsM0g3QzQuNzkxLDMsMyw0Ljc5MSwzLDd2MTBjMCwyLjIwOSwxLjc5MSw0LDQsNGg1LjYyMXYtNi45NjFoLTIuMzQzdi0yLjcyNWgyLjM0M1Y5LjMwOSBjMC0yLjMyNCwxLjQyMS0zLjU5MSwzLjQ5NS0zLjU5MWMwLjY5OS0wLjAwMiwxLjM5NywwLjAzNCwyLjA5MiwwLjEwNXYyLjQzaC0xLjQyOGMtMS4xMywwLTEuMzUsMC41MzQtMS4zNSwxLjMyMnYxLjczNWgyLjcgbC0wLjM1MSwyLjcyNWgtMi4zNjVWMjFIMTdjMi4yMDksMCw0LTEuNzkxLDQtNFY3QzIxLDQuNzkxLDE5LjIwOSwzLDE3LDN6Ii8+PC9zdmc+);
-}
-#iconSpotify {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTIsMkM2LjUsMiwyLDYuNSwyLDEyczQuNSwxMCwxMCwxMHMxMC00LjUsMTAtMTBTMTcuNSwyLDEyLDJ6IE0xNi4wNTcsMTYuNDA2Yy0wLjE4OCwwLTAuMjgyLTAuMDk0LTAuNDctMC4xODggYy0xLjQxMS0wLjg0Ny0zLjE5OC0xLjMxNy01LjA3OS0xLjMxN2MtMS4wMzUsMC0yLjE2MywwLjE4OC0zLjEwNCwwLjM3NmMtMC4xODgsMC0wLjM3NiwwLjA5NC0wLjQ3LDAuMDk0IGMtMC4zNzYsMC0wLjY1OC0wLjI4Mi0wLjY1OC0wLjY1OGMwLTAuMzc2LDAuMTg4LTAuNjU4LDAuNTY0LTAuNjU4YzEuMjIzLTAuMjgyLDIuNDQ2LTAuNDcsMy43NjMtMC40NyBjMi4xNjMsMCw0LjEzOSwwLjU2NCw1LjgzMiwxLjUwNWMwLjE4OCwwLjE4OCwwLjM3NiwwLjI4MiwwLjM3NiwwLjY1OEMxNi42MjEsMTYuMjE4LDE2LjMzOSwxNi40MDYsMTYuMDU3LDE2LjQwNnogTTE3LjA5MSwxMy43NzMgYy0wLjE4OCwwLTAuMzc2LTAuMDk0LTAuNTY0LTAuMTg4Yy0xLjU5OS0xLjAzNS0zLjg1Ny0xLjU5OS02LjMwMi0xLjU5OWMtMS4yMjMsMC0yLjM1MiwwLjE4OC0zLjE5OCwwLjM3NiBjLTAuMTg4LDAuMDk0LTAuMjgyLDAuMDk0LTAuNDcsMC4wOTRjLTAuNDcsMC0wLjc1My0wLjM3Ni0wLjc1My0wLjc1M2MwLTAuNDcsMC4xODgtMC42NTgsMC42NTgtMC44NDcgYzEuMTI5LTAuMjgyLDIuMjU4LTAuNTY0LDMuODU3LTAuNTY0YzIuNjM0LDAsNS4wNzksMC42NTgsNy4xNDksMS44ODFjMC4yODIsMC4xODgsMC40NywwLjQ3LDAuNDcsMC43NTMgQzE3Ljg0NCwxMy4zOTYsMTcuNTYyLDEzLjc3MywxNy4wOTEsMTMuNzczeiBNMTguMzE0LDEwLjc2MmMtMC4xODgsMC0wLjI4Mi0wLjA5NC0wLjU2NC0wLjE4OCBjLTEuODgxLTEuMDM1LTQuNjA5LTEuNjkzLTcuMjQzLTEuNjkzYy0xLjMxNywwLTIuNzI4LDAuMTg4LTMuOTUxLDAuNDdjLTAuMTg4LDAtMC4yODIsMC4wOTQtMC41NjQsMC4wOTQgQzUuNDI4LDkuNTQsNS4wNTEsOS4wNjksNS4wNTEsOC41MDVjMC0wLjU2NCwwLjI4Mi0wLjg0NywwLjY1OC0wLjk0MUM3LjIxNSw3LjE4OCw4LjgxNCw3LDEwLjUwNyw3IGMyLjkxNiwwLDUuOTI2LDAuNjU4LDguMjc4LDEuODgxYzAuMjgyLDAuMTg4LDAuNTY0LDAuNDcsMC41NjQsMC45NDFDMTkuMjU1LDEwLjM4NiwxOC44NzgsMTAuNzYyLDE4LjMxNCwxMC43NjJ6Ii8+PC9zdmc+);
-  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTIsMkM2LjUsMiwyLDYuNSwyLDEyczQuNSwxMCwxMCwxMHMxMC00LjUsMTAtMTBTMTcuNSwyLDEyLDJ6IE0xNi4wNTcsMTYuNDA2Yy0wLjE4OCwwLTAuMjgyLTAuMDk0LTAuNDctMC4xODggYy0xLjQxMS0wLjg0Ny0zLjE5OC0xLjMxNy01LjA3OS0xLjMxN2MtMS4wMzUsMC0yLjE2MywwLjE4OC0zLjEwNCwwLjM3NmMtMC4xODgsMC0wLjM3NiwwLjA5NC0wLjQ3LDAuMDk0IGMtMC4zNzYsMC0wLjY1OC0wLjI4Mi0wLjY1OC0wLjY1OGMwLTAuMzc2LDAuMTg4LTAuNjU4LDAuNTY0LTAuNjU4YzEuMjIzLTAuMjgyLDIuNDQ2LTAuNDcsMy43NjMtMC40NyBjMi4xNjMsMCw0LjEzOSwwLjU2NCw1LjgzMiwxLjUwNWMwLjE4OCwwLjE4OCwwLjM3NiwwLjI4MiwwLjM3NiwwLjY1OEMxNi42MjEsMTYuMjE4LDE2LjMzOSwxNi40MDYsMTYuMDU3LDE2LjQwNnogTTE3LjA5MSwxMy43NzMgYy0wLjE4OCwwLTAuMzc2LTAuMDk0LTAuNTY0LTAuMTg4Yy0xLjU5OS0xLjAzNS0zLjg1Ny0xLjU5OS02LjMwMi0xLjU5OWMtMS4yMjMsMC0yLjM1MiwwLjE4OC0zLjE5OCwwLjM3NiBjLTAuMTg4LDAuMDk0LTAuMjgyLDAuMDk0LTAuNDcsMC4wOTRjLTAuNDcsMC0wLjc1My0wLjM3Ni0wLjc1My0wLjc1M2MwLTAuNDcsMC4xODgtMC42NTgsMC42NTgtMC44NDcgYzEuMTI5LTAuMjgyLDIuMjU4LTAuNTY0LDMuODU3LTAuNTY0YzIuNjM0LDAsNS4wNzksMC42NTgsNy4xNDksMS44ODFjMC4yODIsMC4xODgsMC40NywwLjQ3LDAuNDcsMC43NTMgQzE3Ljg0NCwxMy4zOTYsMTcuNTYyLDEzLjc3MywxNy4wOTEsMTMuNzczeiBNMTguMzE0LDEwLjc2MmMtMC4xODgsMC0wLjI4Mi0wLjA5NC0wLjU2NC0wLjE4OCBjLTEuODgxLTEuMDM1LTQuNjA5LTEuNjkzLTcuMjQzLTEuNjkzYy0xLjMxNywwLTIuNzI4LDAuMTg4LTMuOTUxLDAuNDdjLTAuMTg4LDAtMC4yODIsMC4wOTQtMC41NjQsMC4wOTQgQzUuNDI4LDkuNTQsNS4wNTEsOS4wNjksNS4wNTEsOC41MDVjMC0wLjU2NCwwLjI4Mi0wLjg0NywwLjY1OC0wLjk0MUM3LjIxNSw3LjE4OCw4LjgxNCw3LDEwLjUwNyw3IGMyLjkxNiwwLDUuOTI2LDAuNjU4LDguMjc4LDEuODgxYzAuMjgyLDAuMTg4LDAuNTY0LDAuNDcsMC41NjQsMC45NDFDMTkuMjU1LDEwLjM4NiwxOC44NzgsMTAuNzYyLDE4LjMxNCwxMC43NjJ6Ii8+PC9zdmc+);
-}
-#iconDelete {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNMjAwLTQ0MHYtODBoNTYwdjgwSDIwMFoiLz48L3N2Zz4=");
+.RockGallery {
+  width: 82%;
+  transition: transform 0.3s ease-in-out;
 }
 
 /*index responsive*/
 
 @media (max-width: 1280px) {
-
-.Albumtext {
-font-size: 13px;
 }
-
-.Artisttext {
-  font-size: 13px;
-}
-
-.PriceText {
-  font-size: 10px;
-
-}
-}
-
 
 @media (max-width: 820px) {
   .heroelement {
@@ -281,16 +197,6 @@ font-size: 13px;
     height: 100%;
   }
 
-  .recomendedvinyl {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 250px;
-    text-align: center;
-    box-shadow: #0f191d 2px 2px;
-    cursor: pointer;
-  }
-
   .cathead2 {
     color: white;
     font-size: 1.5rem;
@@ -298,19 +204,6 @@ font-size: 13px;
     margin-left: 9%;
     margin-top: 14px;
   }
-
-  .indexvinyls {
-    width: 30vw;
-    height: 30vw;
-    object-fit: contain;
-    background-color: rgb(167, 13, 13);
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    border: solid white 1px;
-    box-shadow: #040101 0px 2px;
-  }
-
   p.Catigori {
     padding-top: 6.8vw;
     height: 15vw;
@@ -322,6 +215,19 @@ font-size: 13px;
   .Catigori {
     font-family: jockey;
     font-size: 1rem;
+  }
+  /* For vinyls*/
+  .Rockcatall {
+    width: 83%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    padding: 8px;
   }
 }
 
@@ -422,7 +328,6 @@ font-size: 13px;
     justify-content: center;
     padding-bottom: 63px;
     font-size: 1rem;
-   
   }
 
   .Artisttext {
@@ -460,68 +365,5 @@ font-size: 13px;
     padding-bottom: 10px;
     padding-left: 40px;
     display: block;
-  }
-}
-/*Footer responsive*/
-@media (max-width: 800px) {
-  footer {
-    width: 100%;
-    background-color: darkgray;
-    margin: auto;
-    padding: 2rem 10rem 2rem 1rem;
-    margin-top: 10%;
-  }
-
-  section.innerFooter {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    gap: 22px;
-    width: 42%;
-  }
-
-  div.footerLinks {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .footerSocials {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-  }
-
-  a.footerLinks {
-    color: #000;
-    text-decoration: none;
-  }
-  a.footerLinks:hover {
-    color: #bf431a;
-    transition: 0.2s;
-  }
-
-
-
-  /* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
-  .icon,
-  .iconNav {
-    background: #000;
-    /* margin-right: 0.8rem; */
-    margin: auto;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-  }
-
-  svg {
-    object-fit: fill;
-  }
-
-  .icon:hover {
-    background: #bf431a;
-    transition: 0.2s;
-  }
-  .iconNav:hover {
-    background: #ffffff;
-    transition: 0.2s;
   }
 }
