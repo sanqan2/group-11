@@ -1233,6 +1233,10 @@ button.standard:hover, button.cartButton:hover {
     height: 50% !important;
     width: 1rem;
   }
+
+  .cartImage{
+    display: none;
+  }
 }
 
 .icon:hover {
