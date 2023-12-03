@@ -102,6 +102,7 @@ p.Catigori {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   gap: 1vw;
   justify-content: center;
   margin: auto;
@@ -110,7 +111,7 @@ p.Catigori {
 }
 .RockGallery img {
   width: 122%;
-  height: 12rem;
+  height: 15vw;
   border: solid white 1px;
 }
 .AlbumArtistPrice {
