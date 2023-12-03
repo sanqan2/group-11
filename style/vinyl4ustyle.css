@@ -587,7 +587,6 @@ label {
 button {
   border: 1px solid rgb(72, 42, 45);
   background-color: white;
-  margin-top: 20px;
   font-family: jockey;
   font-size: 20px;
   font-weight: 500;
@@ -780,7 +779,6 @@ p.cart {
   width: 3rem;
   height: 2rem;
   border: 1px solid rgb(72, 42, 45);
-  margin-top: 20px;
   margin-right: 0.2rem;
   font-size: 1rem;
   font-weight: 500;
@@ -800,9 +798,10 @@ input::-webkit-inner-spin-button {
   padding: 0;
 }
 
+
+
 h2.btnText {
   font-family: Jockey;
-  margin: 1rem;
   color: #ffffff;
   padding: 0.3rem 1rem 0.3rem 1rem;
 }
@@ -817,6 +816,7 @@ input.cartActionContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 p.price {
@@ -841,6 +841,13 @@ p.price {
 button.standard {
   padding: 0.3rem 1rem 0.3rem 1rem;
   color: #000;
+  font-size: 1.5rem;
+  margin: auto;
+}
+button.cartButton {
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  color: #000;
+  font-size: 2vw;
 }
 
 button.standard:hover {
@@ -1009,26 +1016,48 @@ button.standard:hover {
     height: 100%;
   }
 
-  .producttext {
-    margin-left: 5vw;
-    font-size: 11vw;
-  }
-  .producttext2 {
-    margin-left: 5vw;
-    font-size: 5vw;
-  }
-  .producttext3 {
-    margin-top: 3vw;
-    margin-left: 5vw;
-    font-size: 4vw;
-  }
-  .producttext4 {
-    margin-top: 5vw;
-    margin-left: 5vw;
-    margin-bottom: auto;
-    font-size: 3vw;
-    font-family: "Courier New", Courier, monospace;
-  }
+.producttext {
+  margin-left: 5vw;
+  font-size: 11vw;
+}
+.producttext2 {
+  margin-left: 5vw;
+  font-size: 5vw;
+}
+.producttext3 {
+  margin-top: 3vw;
+  margin-left: 5vw;
+  font-size: 4vw;
+}
+.producttext4 {
+  margin-top: 5vw;
+  margin-left: 5vw;
+  margin-bottom: 0;
+  font-size: 3vw;
+  font-family: "Courier New", Courier, monospace;
+}
+.amountProduct {
+  margin:0;
+  width:22%;
+  height: 15vw;
+  font-size: 9vw;
+  font-weight: 700;
+  text-align: right;
+}
+
+.cartButton{
+  font-size: 9vw !important;
+  width:76%;
+  height: 15vw;
+margin:0;
+}
+
+.productButtonsContainer{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
 
   .story {
     width: 100%;
@@ -1063,5 +1092,13 @@ button.standard:hover {
 
   textarea {
     height: 250px;
+
+   
+  }
+  .cartInfo{
+    width:90vw;
+  }
+  .cartProduct,.checkoutButtonContainer{
+    width:90vw;
   }
 }
