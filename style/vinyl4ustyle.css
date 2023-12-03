@@ -2,7 +2,6 @@
   font-family: jockey;
   src: url(jockeyone.ttf);
 }
-
 body {
   background-color: rgb(33, 2, 5);
   min-height: 100vh;
@@ -14,14 +13,10 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
 a {
   font-family: jockey;
 }
-/*Header*/
-
 /*search page*/
-
 .searchbox {
   width: 70%;
   margin: 0 auto;
