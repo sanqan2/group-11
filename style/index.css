@@ -206,6 +206,23 @@ a.footerLinks:hover {
 
 /*index responsive*/
 
+@media (max-width: 1280px) {
+
+.Albumtext {
+font-size: 13px;
+}
+
+.Artisttext {
+  font-size: 13px;
+}
+
+.PriceText {
+  font-size: 10px;
+
+}
+}
+
+
 @media (max-width: 820px) {
   .heroelement {
     width: 82%;
@@ -330,8 +347,9 @@ a.footerLinks:hover {
   .herotxt {
     margin: 0 auto;
     padding-top: 70px;
-    width: 40%;
+    width: 80%;
     color: rgb(255, 255, 255);
+    font-size: 30px;
   }
   .recomended {
     width: 82%;
@@ -343,6 +361,7 @@ a.footerLinks:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1vw;
+    text-decoration: none;
   }
 
   .recomendedcat {
@@ -394,17 +413,16 @@ a.footerLinks:hover {
     cursor: pointer;
     border: solid white 1px;
     box-shadow: #040101 0px 2px;
-
     margin-bottom: 70px;
+    margin-top: 5px;
+    text-decoration: underline;
   }
 
   .Albumtext {
     justify-content: center;
-    padding-bottom: 40px;
-    font-size: 0.9rem;
-    display: flex;
-    gap: 10px;
-    justify-content: last baseline;
+    padding-bottom: 63px;
+    font-size: 1rem;
+   
   }
 
   .Artisttext {
@@ -419,6 +437,7 @@ a.footerLinks:hover {
     width: 15vw;
     text-align: center;
     margin: auto;
+    justify-content: center;
   }
 
   .Catigori {
@@ -480,6 +499,8 @@ a.footerLinks:hover {
     color: #bf431a;
     transition: 0.2s;
   }
+
+
 
   /* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
   .icon,
