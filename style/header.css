@@ -275,10 +275,7 @@ svg {
     font-size: 1.6rem;
     margin-left: 26%;
   }
-  .icon {
-    width: 1rem;
-    height: 1rem;
-  }
+  
   header {
     background-color: red;
   }
@@ -365,10 +362,6 @@ svg {
     mask-repeat: no-repeat;
   }
 
-  svg {
-    object-fit: fill;
-  }
-
   .icon:hover {
     background: #bf431a;
     transition: 0.2s;
@@ -385,4 +378,7 @@ svg {
     flex-direction: row;
     gap: 16px;
   }
+
+  .cartImage{display:none;}
+
 }

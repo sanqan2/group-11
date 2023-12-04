@@ -701,7 +701,9 @@ p.price {
   margin: auto;
   margin-left: 0px;
   padding: 0%;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  color: #fff;
 }
 
 .checkoutButtonContainer {

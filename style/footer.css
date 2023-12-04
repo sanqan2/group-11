@@ -1,7 +1,7 @@
 /*footer*/
 footer {
   margin: auto;
-  margin-bottom: 0%;
+  margin-bottom: -1rem !important;
   margin-top: 16px;
   width: 100%;
   background-color: darkgray;
@@ -64,12 +64,13 @@ div.footerSocials {
 }
 
 svg {
-  width: 36px;
+  margin:0;
+  padding: 0;
   object-fit: fill;
 }
 
 .icon:hover {
-  background: rgb(255, 64, 0);
+  background: red;
   transition: 0.2s;
 }
 .iconNav:hover {
@@ -119,7 +120,7 @@ svg {
     width: 100%;
     background-color: darkgray;
     margin: auto;
-    padding: 2rem 10rem 2rem 1rem;
+    padding: 2rem 10rem 2rem 2rem;
     margin-top: 10%;
   }
 
@@ -138,7 +139,12 @@ svg {
 
   .footerSocials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column !important;
+    /* padding: 1rem; */
+    margin: auto !important;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    width: 36px;
     padding: 1rem;
   }
 
@@ -147,7 +153,7 @@ svg {
     text-decoration: none;
   }
   a.footerLinks:hover {
-    color: #bf431a;
+    color: red;
     transition: 0.2s;
   }
 
@@ -165,7 +171,7 @@ svg {
   }
 
   .icon:hover {
-    background: #bf431a;
+    background: red;
     transition: 0.2s;
   }
   .iconNav:hover {
