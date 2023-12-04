@@ -356,7 +356,7 @@ h3 {
 
 input[type="text"] {
   width: 100%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding: 12px;
   border: 1px solid #ccc;
   /* border-radius: 3px; */
@@ -513,7 +513,8 @@ div.flexright {
 }
 
 .inputgroup {
-  margin: -10px;
+  margin: 10px;
+  margin-bottom: 0;
   position: relative;
 }
 
@@ -724,9 +725,9 @@ p.price {
   flex-direction: row;
 }
 
-.left {
+/* .left {
   margin-left: 0px;
-}
+} */
 
 button.standard {
   padding: 0.3rem 1rem 0.3rem 1rem;
@@ -1007,4 +1008,14 @@ button.cartButton:hover {
   h2.btnText {
     text-align: center;
   }
+
+  div.flexright {
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding:0;
+  }
+  
 }
