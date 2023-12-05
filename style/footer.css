@@ -64,7 +64,7 @@ div.footerSocials {
 }
 
 svg {
-  margin:0;
+  margin: 0;
   padding: 0;
   object-fit: fill;
 }
@@ -140,11 +140,10 @@ svg {
   .footerSocials {
     display: flex;
     flex-direction: column !important;
-    /* padding: 1rem; */
     margin: auto !important;
     margin-right: 0%;
     margin-bottom: 0%;
-    width: 36px;
+    width: 1rem;
     padding: 1rem;
   }
 
