@@ -275,7 +275,7 @@ svg {
     font-size: 1.6rem;
     margin-left: 26%;
   }
-  
+
   header {
     background-color: red;
   }
@@ -373,12 +373,13 @@ svg {
 
   .twoicons {
     height: 100%;
-    margin-left: 14%;
+    margin-left: 8%;
     display: flex;
     flex-direction: row;
     gap: 16px;
   }
 
-  .cartImage{display:none;}
-
+  .cartImage {
+    display: none;
+  }
 }
