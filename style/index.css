@@ -31,10 +31,11 @@ a {
 }
 
 .herotxt {
-  margin: 0 auto;
-  padding-top: 100px;
+  margin: auto;
+  padding-top: 80px;
   width: 40%;
   color: rgb(255, 255, 255);
+  text-shadow: rgb(255, 255, 255) 1rem 1rem 8rem;
 }
 .recomended {
   width: 82%;
@@ -259,7 +260,7 @@ p.Catigori {
 
   .herotxt {
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 47px;
     width: 80%;
     color: rgb(255, 255, 255);
     font-size: 25px;

@@ -319,12 +319,12 @@ svg {
   }
   .nav-menu {
     position: fixed;
-    right: -100%;
+    right: -100vw;
     top: 70px;
     gap: 0;
     flex-direction: column;
     background-color: white;
-    width: 40%;
+    width: 100vw;
     font-family: jockey;
     font-size: 1.2rem;
     text-align: center;
