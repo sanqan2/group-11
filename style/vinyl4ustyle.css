@@ -19,10 +19,10 @@ a {
   font-family: jockey;
 }
 
-.undecorated{
+.undecorated {
   text-decoration: none;
 }
-.undecorated:hover{
+.undecorated:hover {
   text-decoration: underline;
 }
 
@@ -592,7 +592,7 @@ button {
   background-color: rgb(211, 191, 191);
 }
 #hiddendiv {
-  width: 70%;
+  width: 100%;
   height: 150px;
   margin: 0 auto;
   text-align: center;
@@ -600,7 +600,8 @@ button {
   border: solid white 2px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Roboto Slab", serif;
+  padding-top: 10%;
+  font-family: "jockey";
   display: none;
 }
 button:hover {
