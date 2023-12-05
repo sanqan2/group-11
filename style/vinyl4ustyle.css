@@ -27,10 +27,6 @@ a {
 }
 
 .albumGrid {
-  /* height: 50vw;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr; */
   height: 100%;
   width: 100%;
   display: flex;
@@ -52,6 +48,21 @@ img.product {
   margin: auto;
   padding: 4vw;
 }
+
+.catViewed{
+    width: 83%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    padding: 8px;
+  }
+
+
+
 
 /*search page*/
 .searchbox {
@@ -1023,4 +1034,18 @@ button.cartButton:hover {
     width: 100%;
     padding: 0;
   }
+
+  .catViewed {
+    width: 83%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    padding: 8px;
+  }
+
 }
