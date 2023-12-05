@@ -209,7 +209,8 @@ p.Catigori {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 5rem;
+  /*margin-bottom: 5rem;*/
+  margin-bottom: 6rem;
 }
 
 .vinylCover {
@@ -235,6 +236,7 @@ img.product {
   gap: 1vw;
   justify-content: center;
   margin: auto;
+
   overflow: hidden;
   padding: 8px;
 }
