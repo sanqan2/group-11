@@ -18,6 +18,13 @@ a {
   font-family: jockey;
 }
 
+.undecorated{
+  text-decoration: none;
+}
+.undecorated:hover{
+  text-decoration: underline;
+}
+
 .albumGrid {
   /* height: 50vw;
   width: 100vw;
@@ -27,6 +34,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin-bottom: 5rem;
 }
 
 .vinylCover {
