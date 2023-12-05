@@ -254,6 +254,7 @@ img.square {
   object-fit: contain;
   height: 50vw;
   opacity: 0;
+  pointer-events: none;
 }
 .producttext {
   margin-left: 3vw;
