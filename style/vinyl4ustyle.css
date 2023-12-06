@@ -275,7 +275,7 @@ img.square {
   margin-top: 2vw;
   margin-left: 3vw;
   margin-bottom: auto;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-family: "Courier New", Courier, monospace;
 }
 .addtocartdiv {
@@ -390,6 +390,24 @@ span.price {
 .bodycomplete {
   background-image: url(../pics/completepic.svg);
 }
+
+div.paymentOptions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+p.paymentOptions {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-right: 1rem;
+  margin-top: -0.1rem;
+}
+
+input.paymentOptions {
+  margin-right: 0.2rem;
+}
+
 .thanks {
   width: 80%;
   height: 250px;
@@ -911,7 +929,7 @@ button.cartButton:hover {
     margin-top: 5vw;
     margin-left: 5vw;
     margin-bottom: 0;
-    font-size: 3vw;
+    font-size: 1.5vw;
     font-family: "Courier New", Courier, monospace;
   }
   .amountProduct {
