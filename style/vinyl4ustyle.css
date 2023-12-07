@@ -95,6 +95,11 @@ a {
   border: solid white 1px;
   box-shadow: #040101 0px 2px;
   margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recomendedcat:hover {
+  transform: scale(1.05);
 }
 .recomended {
   width: 82%;
