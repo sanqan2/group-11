@@ -34,11 +34,11 @@ a {
 
 .herotxt {
   margin: auto;
-  padding-top: 80px;
+  padding-top: 40px;
   width: 60%;
   color: rgb(255, 255, 255);
   text-shadow: rgba(0, 0, 0, 0.711) 1rem 1rem 8rem;
-  font-size: 2.6vw;
+  font-size: 3.2vw;
 }
 .recomended {
   width: 82%;
@@ -167,9 +167,8 @@ p.Catigori {
   .herotxt {
     margin: 0 auto;
     padding-top: 40px;
-    width: 40%;
     color: rgb(255, 255, 255);
-    font-size: 3.5vw;
+    font-size: 4.9vw;
   }
   .recomended {
     width: 82%;
@@ -270,9 +269,8 @@ p.Catigori {
   .herotxt {
     margin: 0 auto;
     padding-top: 47px;
-    width: 80%;
     color: rgb(255, 255, 255);
-    font-size: 5.2vw;
+    font-size: 5.5vw;
   }
   .recomended {
     width: 82%;

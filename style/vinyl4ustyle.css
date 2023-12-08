@@ -310,7 +310,7 @@ h3 {
   margin: 0 -16px;
 }
 
-.col-25 {
+.itemList {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
@@ -325,7 +325,7 @@ h3 {
   flex: 75%;
 }
 
-.col-25,
+.itemList,
 .col-50,
 .col-75 {
   padding: 0 16px;
@@ -766,7 +766,7 @@ button.cartButton:hover {
   .row {
     flex-direction: column-reverse;
   }
-  .col-25 {
+  .itemList {
     margin-bottom: 20px;
   }
 }

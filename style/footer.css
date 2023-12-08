@@ -56,6 +56,9 @@ div.footerSocials {
   height: 100%;
 }
 
+
+/* Svg icon fill colour change on hover using webkit-mask-image property https://pqina.nl/blog/set-svg-background-image-fill-color/  */
+/* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
 .icon,
 .iconNav {
   background: #000;
@@ -79,7 +82,7 @@ svg {
   transition: 0.2s;
 }
 
-/* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
+/* Credit to ICONS8.com for the icons. Icons are encoded in base 64 with specified with and height of 100% meaning theyll fit the empty svgs they get masked onto */
 .icon,
 .iconNav {
   background: #000;
@@ -98,6 +101,7 @@ svg {
   transition: 0.2s;
 }
 
+/* Credit to ICONS8.com for the icons. Icons are encoded in base 64 with specified with and height of 100% meaning theyll fit the empty svgs they get masked onto */
 #iconIG {
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0gOCAzIEMgNS4yMzkgMyAzIDUuMjM5IDMgOCBMIDMgMTYgQyAzIDE4Ljc2MSA1LjIzOSAyMSA4IDIxIEwgMTYgMjEgQyAxOC43NjEgMjEgMjEgMTguNzYxIDIxIDE2IEwgMjEgOCBDIDIxIDUuMjM5IDE4Ljc2MSAzIDE2IDMgTCA4IDMgeiBNIDE4IDUgQyAxOC41NTIgNSAxOSA1LjQ0OCAxOSA2IEMgMTkgNi41NTIgMTguNTUyIDcgMTggNyBDIDE3LjQ0OCA3IDE3IDYuNTUyIDE3IDYgQyAxNyA1LjQ0OCAxNy40NDggNSAxOCA1IHogTSAxMiA3IEMgMTQuNzYxIDcgMTcgOS4yMzkgMTcgMTIgQyAxNyAxNC43NjEgMTQuNzYxIDE3IDEyIDE3IEMgOS4yMzkgMTcgNyAxNC43NjEgNyAxMiBDIDcgOS4yMzkgOS4yMzkgNyAxMiA3IHogTSAxMiA5IEEgMyAzIDAgMCAwIDkgMTIgQSAzIDMgMCAwIDAgMTIgMTUgQSAzIDMgMCAwIDAgMTUgMTIgQSAzIDMgMCAwIDAgMTIgOSB6Ii8+PC9zdmc+");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+ICAgIDxwYXRoIGQ9Ik0gOCAzIEMgNS4yMzkgMyAzIDUuMjM5IDMgOCBMIDMgMTYgQyAzIDE4Ljc2MSA1LjIzOSAyMSA4IDIxIEwgMTYgMjEgQyAxOC43NjEgMjEgMjEgMTguNzYxIDIxIDE2IEwgMjEgOCBDIDIxIDUuMjM5IDE4Ljc2MSAzIDE2IDMgTCA4IDMgeiBNIDE4IDUgQyAxOC41NTIgNSAxOSA1LjQ0OCAxOSA2IEMgMTkgNi41NTIgMTguNTUyIDcgMTggNyBDIDE3LjQ0OCA3IDE3IDYuNTUyIDE3IDYgQyAxNyA1LjQ0OCAxNy40NDggNSAxOCA1IHogTSAxMiA3IEMgMTQuNzYxIDcgMTcgOS4yMzkgMTcgMTIgQyAxNyAxNC43NjEgMTQuNzYxIDE3IDEyIDE3IEMgOS4yMzkgMTcgNyAxNC43NjEgNyAxMiBDIDcgOS4yMzkgOS4yMzkgNyAxMiA3IHogTSAxMiA5IEEgMyAzIDAgMCAwIDkgMTIgQSAzIDMgMCAwIDAgMTIgMTUgQSAzIDMgMCAwIDAgMTUgMTIgQSAzIDMgMCAwIDAgMTIgOSB6Ii8+PC9zdmc+");
@@ -157,7 +161,6 @@ svg {
     transition: 0.2s;
   }
 
-  /* Svg icon mask repeat fix from Zach Sausier https://stackoverflow.com/questions/55498806/why-is-css-mask-image-not-working-with-no-repeat */
   .icon,
   .iconNav {
     background: #000;
