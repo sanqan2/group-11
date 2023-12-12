@@ -14,6 +14,7 @@ menu.addEventListener("click", () => {
   navmenu.classList.toggle("active");
 });
 
+// The following 20 lines of code was adapted from https://www.w3schools.com/howto/howto_js_filter_lists.asp: 2023-11-16 //
 // Search function
 function myFunction() {
   // Declare variables

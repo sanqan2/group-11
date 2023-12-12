@@ -45,7 +45,7 @@ li {
   transition: 0, 7s ease;
 }
 .name2 :hover {
-  color: blue;
+  color: red;
 }
 .menu {
   cursor: pointer;
