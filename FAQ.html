@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="./style/header.css"/>
     <link rel="stylesheet" href="./style/vinyl4ustyle.css" />
     <link rel="stylesheet" href="./style/footer.css" />
-    <script src="./script/contact.js" defer></script>
-    <title>About</title>
+    <link rel="stylesheet" href="faq.css">
+    <script src="./script/jscript.js" defer></script>
+    <script src="./script/faq.js" defer></script>
+    <title>FAQ</title>
   </head>
   <body class="about">
     <header>
@@ -15,7 +17,7 @@
         <a href="index.html"><div class="logo"></div></a>
         <div class="sitename">Vinyl4u</div>
 
-        <div class="siteplace">About</div>
+        <div class="siteplace">Contact</div>
         <div class="twoicons">
           <a href="search.html"
             ><div id="iconSearch" class="iconNav">
@@ -54,47 +56,54 @@
       </nav>
     </header>
     <main>
-      <div>
-      <h1 class="story">
-        Our story
-      </h1>
-       <div class="storytext">
-        <p>I'm baby selfies butcher mumblecore migas. Lomo whatever authentic, actually pour-over fingerstache swag tumeric farm-to-table grailed sustainable skateboard tonx poutine. </p>
-        <p>Blue bottle tote bag XOXO, grailed edison bulb blog raw denim deep v enamel pin fam direct trade ramps taiyaki chia. You probably haven't heard of them big mood ennui coloring book cornhole.</p>
-        <p>Fingerstache artisan chartreuse locavore. Flexitarian williamsburg chambray occupy. VHS migas mumblecore hoodie butcher try-hard, venmo disrupt big mood williamsburg. Sriracha fanny pack prism tousled hella.</p>
+      <section>
+       <h2 class="FAQt">FAQ</h2>
+
+       <div class="faq">
+        <div class="question">
+        <h3>Where do we ship to?</h3>
+      </div>
+      <div class="answer">
+        <p>Our company proudly offers worldwide shipping services, ensuring that customers from all corners of the globe can enjoy our products delivered straight to their doorstep, regardless of their location or geographical boundaries.</p>
        </div>
     </div>
-    <h1 class="contactus">Contact us:</h3>
-    <h1 class="conmail">Mail: Random@gmail.com</h3>
-     
-      <div class="contact">
-        
-      <form>
+    <div class="faq">
+      <div class="question">
+      <h3>How long does the shipping take?</h3>
+    </div>
+    <div class="answer">
+      <p>The estimated time for delivery of our shipments typically ranges between 3 to 7 days, varying depending on the geographical location of our valued customers. This timeframe ensures that regardless of where you are located, whether it be near or far, we strive to promptly deliver your order to your doorstep within a reasonable and expedient timeframe.</p>
+     </div>
+  </div>
+  <div class="faq">
+    <div class="question">
+    <h3>How frequently do we refresh our inventory of vinyl records?</h3>
+  </div>
+  <div class="answer">
+    <p>We make it a priority to update our supply of vinyl records frequently, typically on a weekly basis. This ensures that our inventory remains dynamic and diverse, offering our customers a steady stream of new and exciting options to explore and enjoy.</p>
+   </div>
+</div>
 
-        <div class="inputgroup">
-        <input class="aboutinput" type="text" id="name" required>
-        <label for="name">Name:</label>
-        </div>
+<div class="faq">
+  <div class="question">
+  <h3>Which payment methods are accepted by our company?</h3>
+</div>
+<div class="answer">
+ <p>We accept payments via debit cards, credit cards, and invoices processed through KLARNA.</p>
+ </div>
+</div>
+<div class="faq">
+  <div class="question">
+  <h3>Did your question get answered or do you have another question?</h3>
+</div>
+<div class="answer">
+ <a href="contact.html"><p class="p1" href="contact.html"> Click here to contact us!</p></a>
+ </div>
+</div>  
 
-        <div class="inputgroup">
-        <input class="aboutinput" type="text" id="mail" required>
-        <label for="mail">Mail:</label>
-        </div>
+</section>
 
-        <div class="inputgroup">
-        <textarea id="message" rows="10" required></textarea>
-        <label for="message">Message:</label>
-        </div>
-        <div class="inputgroup">
-        <button type="send" class="standard left" id="redbtn">Send</button></div>
-        <div id="hiddendiv">Thank you for your message!</div>
-        
-      </form>
-      
-      
-      </div>
-      
-      <div class="footer"></div>
+   
     </main>
 
     
@@ -144,5 +153,6 @@
         </div>
       </section>
     </footer>
+    
   </body>
 </html>

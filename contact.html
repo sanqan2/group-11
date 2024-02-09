@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/header.css"/>
     <link rel="stylesheet" href="./style/vinyl4ustyle.css" />
     <link rel="stylesheet" href="./style/footer.css" />
-    <script src="./script/jscript.js" defer></script>
-    <title>Complete</title>
+    <script src="./script/contact.js" defer></script>
+    <title>About</title>
   </head>
-  <body class="bodycomplete">
+  <body class="about">
     <header>
       <nav class="navbar">
         <a href="index.html"><div class="logo"></div></a>
         <div class="sitename">Vinyl4u</div>
 
-        <div class="siteplace">Home</div>
+        <div class="siteplace">Contact</div>
         <div class="twoicons">
           <a href="search.html"
             ><div id="iconSearch" class="iconNav">
@@ -53,10 +53,43 @@
         </div>
       </nav>
     </header>
-    <div class="thanks">
-      Order Complete <br />Thank your<br />
-      <div class="spinlogo"></div>
-    </div>
+    <main>
+
+    <h1 class="contactus">Contact us:</h3>
+    <h1 class="conmail">Mail: Random@gmail.com</h3>
+     
+      <div class="contact">
+        
+      <form>
+
+        <div class="inputgroup">
+        <input class="aboutinput" type="text" id="name" required>
+        <label for="name">Name:</label>
+        </div>
+
+        <div class="inputgroup">
+        <input class="aboutinput" type="text" id="mail" required>
+        <label for="mail">Mail:</label>
+        </div>
+
+        <div class="inputgroup">
+        <textarea id="message" rows="10" required></textarea>
+        <label for="message">Message:</label>
+        </div>
+        <div class="inputgroup">
+        <button type="send" class="standard left" id="redbtn">Send</button></div>
+        <div id="hiddendiv">Thank you for your message!</div>
+        
+      </form>
+      
+      
+      </div>
+      
+      <div class="footer"></div>
+    </main>
+
+    
+
     <footer>
       <section class="innerFooter">
         <div class="footerLinks">
@@ -70,15 +103,35 @@
           <a class="footerLinks" href="##"
             ><h2 class="footerLinks">Customer Care</h2></a
           >
-          <a class="footerLinks" href="about.html">Contact Us</a>
-          <a class="footerLinks" href="about.html">About Us</a>
+          <a class="footerLinks" href="##">Contact Us</a>
+          <a class="footerLinks" href="##">About Us</a>
         </div>
+        <!-- <div class="spacer"></div> -->
         <div class="footerSocials">
-          <img src="./pics/instagram.svg" alt="" class="footerSocials" /><img
-            src="./pics/facebook.svg"
-            alt=""
-            class="footerSocials"
-          /><img src="./pics/spotify.svg" alt="" class="footerSocials" />
+          <div id="iconIG" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+              width="24px"
+              height="24px"
+            ></svg>
+          </div>
+          <div id="iconFB" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+            ></svg>
+          </div>
+          <div id="iconSpotify" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+            ></svg>
+          </div>
         </div>
       </section>
     </footer>
